@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // Reviews Component Styles
 .reviews {
   @include section-spacing;
@@ -49,11 +51,11 @@
     position: relative;
 
     @include tablet {
-      flex: 0 0 calc(50% - #{$spacing-xl / 2});
+      flex: 0 0 calc(50% - #{math.div($spacing-xl, 2)});
     }
 
     @include desktop {
-      flex: 0 0 calc(25% - #{$spacing-xl * 3 / 4});
+      flex: 0 0 calc(25% - #{math.div($spacing-xl * 3, 4)});
     }
 
     &:hover {
