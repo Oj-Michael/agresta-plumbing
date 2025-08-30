@@ -1,0 +1,123 @@
+// Services Component Styles
+.services {
+  @include section-spacing;
+  background: $gray-50;
+
+  &__container {
+    @include content-container;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-3xl;
+
+    h2 {
+      @include heading-2;
+      margin-bottom: $spacing-md;
+    }
+
+    p {
+      @include body-text;
+      color: $gray-600;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: $spacing-xl;
+    grid-template-columns: 1fr;
+    
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $spacing-2xl;
+    }
+    
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+// Service Card Component
+.service-card {
+  background: $white;
+  border-radius: $radius-xl;
+  overflow: hidden;
+  box-shadow: $shadow-lg;
+  transition: all $transition-normal;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+  }
+
+  &__image {
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &__content {
+    padding: $spacing-lg;
+    text-align: left;
+    position: relative;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $font-xl;
+    font-weight: 600;
+    color: $gray-800;
+    margin-bottom: $spacing-sm;
+    line-height: 1.3;
+  }
+
+  &__description {
+    color: $gray-500;
+    line-height: 1.6;
+    margin-bottom: $spacing-lg;
+    font-size: $font-base;
+  }
+
+  &__link {
+    color: $accent-orange;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: $font-base;
+    position: relative;
+    display: inline-block;
+    transition: color $transition-fast;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $primary-blue;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform $transition-fast;
+    }
+
+    &:hover {
+      color: $primary-dark;
+
+      &::after {
+        transform: scaleX(1);
+        background: $primary-dark;
+      }
+    }
+  }
+}

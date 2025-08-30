@@ -1,0 +1,60 @@
+// Free Inspection Section
+.free-inspection {
+  @include section-spacing;
+  background-color: $primary-dark;
+
+  &__container {
+    @include content-container;
+  }
+
+  &__title {
+  text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.1;
+    color: $white;
+
+    @include tablet {
+      font-size: 1.6rem;
+    }
+
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+
+  &__grid {
+    margin-block: 2rem;
+    display: grid;
+    gap: $spacing-xl;
+    grid-template-columns: 1fr;
+    
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $spacing-2xl;
+    }
+    
+    @include desktop {
+        margin-block: 3rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .free-inspection-card{
+        text-align: center;
+        padding: $spacing-md;
+        border-radius: $radius-lg;
+        background-color: $gray-200;
+        box-shadow: -3px 4px 0 3px rgba($accent-orange, 0.7);
+        .card-title{
+            font-size: $font-base;
+            margin-bottom: $spacing-md;
+        }
+        .card-price{
+            padding: $spacing-sm $spacing-lg;
+            background-color: $primary-dark;
+            color: $white;
+            font-size: 1rem;
+            border-radius: $radius-full;
+        }
+    }
+  }
+}

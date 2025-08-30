@@ -1,0 +1,58 @@
+// Footer Component Styles
+.footer {
+  background: $gray-900;
+  color: $white;
+  padding: $spacing-3xl 0 $spacing-xl 0;
+
+  &__container {
+    @include container;
+  }
+
+  &__content {
+    display: grid;
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xl;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__section {
+    h3 {
+      @include heading-3;
+      color: $white;
+      margin-bottom: $spacing-md;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: $spacing-sm;
+
+        a {
+          color: $gray-300;
+          transition: color $transition-fast;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid $gray-700;
+    padding-top: $spacing-lg;
+    text-align: center;
+    color: $gray-400;
+    font-size: $font-sm;
+  }
+}

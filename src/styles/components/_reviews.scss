@@ -1,0 +1,198 @@
+// Reviews Component Styles
+.reviews {
+  @include section-spacing;
+  background: $primary-gradient;
+
+  &__container {
+    @include content-container;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $font-2xl;
+    font-weight: 700;
+    color: $gray-50;
+    margin-bottom: $spacing-3xl;
+
+    @include tablet {
+      font-size: $font-4xl;
+    }
+
+    @include desktop {
+      font-size: $font-4xl;
+    }
+  }
+
+  &__carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__track {
+    display: flex;
+    gap: $spacing-md;
+
+    @include tablet; @include desktop {
+      gap: $spacing-lg;
+    }
+  }
+
+  &__card {
+    flex: 0 0 calc(100% - #{$spacing-md});
+    background: linear-gradient(to bottom, $white, $bg-main, rgba($bg-secondary, 0.8));
+    border-radius: $radius-xl;
+    padding: $spacing-md;
+    box-shadow: $shadow-md;
+    transition: all $transition-normal;
+    position: relative;
+
+    @include tablet {
+      flex: 0 0 calc(50% - #{$spacing-xl / 2});
+    }
+
+    @include desktop {
+      flex: 0 0 calc(25% - #{$spacing-xl * 3 / 4});
+    }
+
+    &:hover {
+      box-shadow: $shadow-2xl;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: $spacing-sm;
+    justify-content: center;
+
+    .star {
+      color: #fbbf24;
+      font-size: $font-lg;
+    }
+  }
+
+  &__text {
+    font-size: $font-sm;
+    line-height: 1.5;
+    color: $gray-700;
+    margin-bottom: $spacing-lg;
+    text-align: center;
+
+    @include tablet; @include desktop {
+      font-size: $font-sm;
+    }
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: $radius-full;
+    background: $primary-dark;
+    color: $white;
+    @include flex-center;
+    font-weight: 600;
+    font-size: $font-lg;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__name {
+    font-weight: 600;
+    color: $gray-700;
+    font-size: $font-base;
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    .verified {
+      color: $accent-orange;
+      font-size: $font-base;
+    }
+  }
+
+
+  &__navigation {
+    @include flex-between;
+    margin-top: $spacing-sm;
+    padding: 0 $spacing-md;
+
+    @include tablet {
+      padding: 0 $spacing-lg;
+    }
+  }
+
+  &__nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: $radius-full;
+    background: $gray-100;
+    color: $gray-600;
+    @include flex-center;
+    cursor: pointer;
+    transition: all $transition-fast;
+    font-size: $font-xl;
+
+    &:hover:not(:disabled) {
+      transform: scale(1.05);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-xs;
+    margin-top: $spacing-lg;
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: $radius-full;
+      background: rgba($white, 0.4);
+      cursor: pointer;
+      transition: all $transition-fast;
+
+      &.active {
+        background: $white;
+        transform: scale(1.1);
+      }
+
+      &:hover {
+        background: rgba($white, 0.7);
+      }
+    }
+  }
+
+  @include mobile {
+    &__card {
+      padding: $spacing-lg;
+    }
+
+    &__title {
+      font-size: $font-2xl;
+      margin-bottom: $spacing-xl;
+    }
+
+    &__navigation {
+      margin-top: $spacing-lg;
+    }
+
+    &__nav-btn {
+      width: 40px;
+      height: 40px;
+      font-size: $font-lg;
+    }
+  }
+}

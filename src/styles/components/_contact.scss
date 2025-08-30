@@ -1,0 +1,67 @@
+// Contact Component Styles
+.contact {
+  @include section-spacing;
+
+  &__container {
+    @include container;
+  }
+
+  &__content {
+    display: grid;
+    gap: $spacing-3xl;
+
+    @include desktop {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__info {
+    h2 {
+      @include heading-2;
+      margin-bottom: $spacing-lg;
+    }
+
+    p {
+      @include body-text;
+      margin-bottom: $spacing-xl;
+    }
+  }
+
+  &__form {
+    background: $white;
+    padding: $spacing-xl;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-lg;
+
+    .form-group {
+      margin-bottom: $spacing-lg;
+
+      label {
+        display: block;
+        margin-bottom: $spacing-sm;
+        font-weight: 600;
+        color: $gray-700;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: $spacing-md;
+        border: 1px solid $gray-300;
+        border-radius: $radius-md;
+        font-size: $font-base;
+        transition: border-color $transition-fast;
+
+        &:focus {
+          border-color: $primary-blue;
+          outline: none;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+    }
+  }
+}

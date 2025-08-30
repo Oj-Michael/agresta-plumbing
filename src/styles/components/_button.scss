@@ -1,0 +1,30 @@
+// Button Component Styles
+.btn {
+  @include button-base;
+  &--primary {
+    @include button-primary;
+  }
+
+  &--secondary {
+    @include button-secondary;
+  }
+
+  &--accent {
+    @include button-accent;
+  }
+
+  &--large {
+    padding: $spacing-md $spacing-lg;
+    font-size: $font-base;
+
+    @include tablet {
+      padding: $spacing-lg $spacing-2xl;
+      font-size: $font-lg;
+    }
+  }
+
+  &--small {
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-sm;
+  }
+}
