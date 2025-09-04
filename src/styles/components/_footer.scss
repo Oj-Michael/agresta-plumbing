@@ -1,8 +1,9 @@
 // Footer Component Styles
 .footer {
-  background: $gray-900;
+  background: $primary-gradient;
   color: $white;
   padding: $spacing-3xl 0 $spacing-xl 0;
+  position: relative;
 
   &__container {
     @include container;
@@ -18,41 +19,151 @@
     }
 
     @include desktop {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   &__section {
-    h3 {
-      @include heading-3;
-      color: $white;
-      margin-bottom: $spacing-md;
+    &--branding {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-lg;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    h3 {
+      font-family: $font-heading;
+      font-size: $font-xl;
+      font-weight: 600;
+      color: $white;
+      margin-bottom: $spacing-md;
+      text-align: center;
 
-      li {
-        margin-bottom: $spacing-sm;
-
-        a {
-          color: $gray-300;
-          transition: color $transition-fast;
-
-          &:hover {
-            color: $white;
-          }
-        }
+      @include tablet {
+        text-align: left;
       }
     }
   }
 
+  // Logo and Company Name
+
+  &__logo-img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 180px;
+    border-radius: $radius-md;
+    object-fit: cover;
+  }
+
+  &__company-name {
+    font-family: $font-heading;
+    font-size: $font-lg;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+
+  // Useful Links
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
+
+    li {
+      margin-bottom: $spacing-sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    color: rgba($white, 0.8);
+    text-decoration: none;
+    font-size: $font-base;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  // Contact Information
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__contact-item {
+    color: rgba($white, 0.9);
+    font-size: $font-base;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  // Bottom Section
   &__bottom {
-    border-top: 1px solid $gray-700;
+    border-top: 1px solid rgba($white, 0.2);
     padding-top: $spacing-lg;
     text-align: center;
-    color: $gray-400;
+    color: rgba($white, 0.7);
     font-size: $font-sm;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  // Scroll to Top Button
+  &__scroll-top {
+    position: fixed;
+    bottom: $spacing-xl;
+    right: $spacing-xl;
+    width: 50px;
+    height: 50px;
+    background: $white;
+    border: none;
+    border-radius: 50%;
+    color: $primary-dark;
+    font-size: $font-lg;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: $shadow-lg;
+    transition: all $transition-normal;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-xl;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  &__scroll-icon {
+    font-size: $font-xl;
+    line-height: 1;
   }
 }

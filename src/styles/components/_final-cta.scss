@@ -13,7 +13,7 @@
     background-attachment: fixed;
 
     @include tablet; @include desktop {
-        background-position: top-center;
+        background-position: top;
     }
 
     &__container {

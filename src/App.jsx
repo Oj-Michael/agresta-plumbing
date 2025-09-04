@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 
 // Import components
 import Header from './components/common/Header';
-// import Footer from './components/layout/Footer';
+import Footer from './components/layout/Footer';
 
 // Import styles
 import './styles/main.scss';
@@ -30,7 +30,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Router>
     </HelmetProvider>
