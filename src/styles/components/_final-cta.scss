@@ -1,0 +1,58 @@
+// Final CTA Section
+.final-cta {
+    height: 75vh;
+    @include section-spacing;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: var(--finalCtaBg), linear-gradient(65deg, #000, #0b0b6f8e,#0007, rgba(0, 74, 74, 0.677));
+    background-blend-mode: overlay;
+    background-color: #0002;
+    background-attachment: fixed;
+
+    @include tablet; @include desktop {
+        background-position: top-center;
+    }
+
+    &__container {
+        @include content-container;
+        text-align: center;
+
+        @include tablet; @include desktop {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        font-size: $font-4xl;
+        margin-bottom: $spacing-xl;
+        max-width: 600px;
+        line-height: 1.5;
+        color: $white;
+        text-shadow: -4px 4px 2px $gray-700;
+
+        @include tablet {
+            font-size: $font-4xl;
+        }
+
+        @include desktop {
+            font-size: $font-5xl;
+        }
+    }
+
+    &__description {
+        text-shadow: -4px 4px 2px $gray-700;
+        color: $bg-secondary;
+        font-size: $font-lg;
+        margin-bottom: $spacing-2xl;
+        @include tablet {
+            font-size: $font-xl;
+        }
+
+        @include desktop {
+            font-size: $font-2xl;
+        }
+    }
+}

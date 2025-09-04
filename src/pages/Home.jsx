@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import heroBg from '../assets/images/plumbers-johannesburg.jpg';
+import finalCtaBg from '../assets/images/plumbero-img16-1.webp';
 import serv1 from '../assets/images/serv-1.webp';
 import serv2 from '../assets/images/serv-2.webp';
 import serv3 from '../assets/images/serv-3.webp';
@@ -371,6 +372,19 @@ const Home = () => {
         {/* FAQ Section */}
         <FAQ />
         
+        {/* Final CTA Section */}
+        <section className="final-cta"
+        style={{
+          '--finalCtaBg': `url(${finalCtaBg})`
+        }}>
+          <div className="final-cta__container">
+            <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
+            <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+            <button className="btn btn--primary btn--large">
+              Book Free Inspection
+            </button>
+          </div>
+        </section>
       </div>  
     </>
   );

@@ -1,7 +1,7 @@
 // FAQ Component Styles
 .faq {
   padding: $spacing-3xl 0;
-  background: $bg-main;
+  background: $bg-secondary;
 
   &__container {
     @include container;
@@ -44,7 +44,7 @@
 
   &__item {
     background: $white;
-    border-radius: $radius-lg;
+    border-radius: $radius-xl;
     box-shadow: $shadow-md;
     margin-bottom: $spacing-md;
     overflow: hidden;
@@ -69,7 +69,7 @@
 
   &__question {
     width: 100%;
-    padding: $spacing-lg $spacing-xl;
+    padding: $spacing-md;
     background: $white;
     border: none;
     text-align: left;
@@ -79,7 +79,7 @@
     align-items: center;
     transition: all 100ms ease-out;
     font-family: $font-primary;
-    font-size: $font-lg;
+    font-size: $font-base;
     font-weight: 600;
     color: $gray-800;
     line-height: 1.4;
@@ -90,10 +90,7 @@
       outline-offset: 2px;
     }
 
-    @include tablet {
-      padding: $spacing-xl $spacing-2xl;
-      font-size: $font-xl;
-    }
+  
   }
 
   &__question-text {
@@ -137,13 +134,13 @@
     }
 
     p {
-      font-size: $font-base;
+      font-size: $font-sm;
       color: $gray-700;
       line-height: 1.7;
       margin: 0;
 
       @include tablet {
-        font-size: $font-lg;
+        font-size: $font-base;
       }
     }
   }
@@ -174,7 +171,7 @@
       padding: $spacing-md;
 
       p {
-        font-size: $font-xs !important;
+        font-size: $font-sm !important;
       }
     }
 
