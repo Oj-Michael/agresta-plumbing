@@ -1,0 +1,72 @@
+// How it works component styles
+.how-it-works {
+    @include section-spacing;
+    background-color: $bg-secondary;
+
+    &__container {
+        @include content-container;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: $font-2xl;
+        font-weight: 700;
+        color: $gray-800;
+        
+        margin-bottom: $spacing-3xl;
+        @include tablet {
+            font-size: $font-3xl;
+        }
+      
+        @include desktop {
+            font-size: $font-4xl;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-xl;
+        
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @include desktop {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .how-it-works__card {
+            background-color: $white;
+            border-radius: $radius-sm;
+            box-shadow: $shadow-2xl;
+            padding: $spacing-lg;
+            text-align: center;
+
+            .how-it-works__card__number {
+                font-size: $font-5xl;
+                font-weight: 600;
+                color: rgba($primary-dark, 0.2);
+                display: block;
+                text-align: right;
+            }
+
+            .how-it-works__card__title {
+                text-align: left;
+                font-size: $font-lg;
+                color: $gray-800;
+                margin-block: $spacing-sm;
+            }
+
+            .how-it-works__card__description {
+                font-size: $font-sm;
+                color: $gray-500;
+                line-height: 1.6;
+                text-align: justify;
+            }
+            
+        }
+    }
+    
+    
+}

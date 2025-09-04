@@ -1,0 +1,228 @@
+// FAQ Component Styles
+.faq {
+  padding: $spacing-3xl 0;
+  background: $bg-main;
+
+  &__container {
+    @include container;
+    max-width: $container-lg;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: $spacing-xl;
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $font-2xl;
+    font-weight: 700;
+    color: $gray-800;
+    margin-bottom: $spacing-sm;
+    line-height: 1.2;
+
+    @include tablet {
+      font-size: $font-3xl;
+    }
+
+    @include desktop {
+      font-size: $font-3xl;
+    }
+  }
+
+  &__subtitle {
+    font-size: $font-base;
+    color: $gray-600;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  &__accordion {
+    margin-bottom: $spacing-3xl;
+  }
+
+  &__item {
+    background: $white;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-md;
+    margin-bottom: $spacing-md;
+    overflow: hidden;
+    transition: all 100ms ease-out;
+
+    &:hover {
+      box-shadow: $shadow-lg;
+    }
+
+    &--open {
+      .faq__question {
+        background: $primary-dark;
+        color: $white;
+
+        .faq__icon {
+          background: rgba(255, 255, 255, 0.2);
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__question {
+    width: 100%;
+    padding: $spacing-lg $spacing-xl;
+    background: $white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 100ms ease-out;
+    font-family: $font-primary;
+    font-size: $font-lg;
+    font-weight: 600;
+    color: $gray-800;
+    line-height: 1.4;
+
+
+    &:focus {
+      outline: 2px solid $primary-dark;
+      outline-offset: 2px;
+    }
+
+    @include tablet {
+      padding: $spacing-xl $spacing-2xl;
+      font-size: $font-xl;
+    }
+  }
+
+  &__question-text {
+    flex: 1;
+    margin-right: $spacing-md;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $primary-dark;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-xl;
+    font-weight: 700;
+    transition: all 100ms ease-out;
+    flex-shrink: 0;
+
+    @include tablet {
+      width: 36px;
+      height: 36px;
+      font-size: $font-2xl;
+    }
+  }
+
+  &__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 100ms ease-out;
+    background: $white;
+  }
+
+  &__answer-content {
+    padding: $spacing-md;
+
+    @include tablet {
+      padding: $spacing-lg;
+    }
+
+    p {
+      font-size: $font-base;
+      color: $gray-700;
+      line-height: 1.7;
+      margin: 0;
+
+      @include tablet {
+        font-size: $font-lg;
+      }
+    }
+  }
+
+
+  // Responsive adjustments
+  @include mobile {
+    padding: $spacing-2xl 0;
+
+    &__header {
+      margin-bottom: $spacing-2xl;
+    }
+
+    &__title {
+      font-size: $font-xl !important;
+    }
+
+    &__subtitle {
+      font-size: $font-sm !important;
+    }
+
+    &__question {
+      padding: $spacing-md;
+      font-size: $font-sm !important;
+    }
+
+    &__answer-content {
+      padding: $spacing-md;
+
+      p {
+        font-size: $font-xs !important;
+      }
+    }
+
+  }
+}
+
+// Animation for smooth accordion opening
+.faq__item--open .faq__answer {
+  animation: faqSlideDown 0.3s ease-out;
+}
+
+@keyframes faqSlideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+// Accessibility improvements
+.faq__question:focus-visible {
+  outline-offset: 2px;
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  .faq__item {
+    border: 2px solid $gray-300;
+  }
+
+  .faq__question {
+    border-bottom: 1px solid $gray-200;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .faq__item,
+  .faq__question,
+  .faq__icon,
+  .faq__answer {
+    transition: none;
+  }
+
+  .faq__item--open .faq__answer {
+    animation: none;
+  }
+}

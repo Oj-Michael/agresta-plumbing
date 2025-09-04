@@ -5,6 +5,7 @@ import serv1 from '../assets/images/serv-1.webp';
 import serv2 from '../assets/images/serv-2.webp';
 import serv3 from '../assets/images/serv-3.webp';
 import ceoImg from '../assets/images/agresta-ceo.webp';
+import FAQ from '../components/sections/FAQ';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -335,6 +336,40 @@ const Home = () => {
             </div>
           </div>
         </section>
+        
+        {/* Working with us is simple */}
+        <section className="how-it-works">
+          <div className="how-it-works__container">
+            <h2 className="how-it-works__title">Working With Us Is Simple</h2>
+            <div className="how-it-works__grid">
+            <div className="how-it-works__card">
+              <span className="how-it-works__card__number">01</span>
+              <h3 className="how-it-works__card__title">Connect With Us</h3>
+              <p className="how-it-works__card__description">Reach out to us for a free inspection or request a service.</p>
+            </div>
+            <div className="how-it-works__card">
+              <span className="how-it-works__card__number">02</span>
+              <h3 className="how-it-works__card__title">Free Fixture Inspection</h3>
+              <p className="how-it-works__card__description">We'll inspect your fixture and provide you with a detailed report.</p>
+            </div>
+            
+            <div className="how-it-works__card">
+              <span className="how-it-works__card__number">03</span>
+              <h3 className="how-it-works__card__title">Schedule the Work</h3>
+              <p className="how-it-works__card__description">We'll schedule the work, approve estimate and pick a time.</p>
+            </div>
+            
+            <div className="how-it-works__card">
+              <span className="how-it-works__card__number">04</span>
+              <h3 className="how-it-works__card__title">Peace of Mind</h3>
+              <p className="how-it-works__card__description">Quality work, warranty and no hidden surprises.</p>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <FAQ />
         
       </div>  
     </>
