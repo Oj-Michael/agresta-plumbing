@@ -1,17 +1,74 @@
 // About Page Styles
 .about {
-  @include section-spacing;
 
-  h1 {
-    @include heading-1;
-    text-align: center;
-    margin-bottom: $spacing-lg;
+  .about-hero{
+    position: relative;
+    overflow: hidden;
+
+    @include section-spacing;
+    background: $primary-dark;
+    .about__container {
+      @include content-container;
+    }
+    .about__grid{
+        margin-block: $spacing-2xl;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-lg;
+
+        @include desktop; @include tablet{
+        margin-block: $spacing-5xl;
+          gap: $spacing-2xl;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          align-items: center;
+        }
+
+        .grid-item{
+          h1{
+              color: $white !important;
+              font-size: $font-2xl;
+              margin-bottom: $spacing-lg;
+              color: $gray-800;
+              @include desktop; @include tablet{
+                font-size: $font-4xl;
+              }
+          }
+          p{
+            text-align: justify;
+            color: $gray-200;
+            font-size: $font-sm;
+            margin-bottom: $spacing-md;
+            line-height: 1.5;
+
+            @include desktop ; @include tablet{
+              font-size: $font-base;
+            }
+          }
+          img{
+            height: 350px;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: $spacing-md;
+
+            @include desktop ; @include tablet {
+              position: absolute;
+              height: 650px;
+              width: 650px;
+              border-radius: $radius-full $radius-lg $radius-lg $radius-full;
+              top: 0;
+              right: 0;
+              box-shadow: 
+              -6px 0 0 5px rgba($color: $primary-dark, $alpha: 0.6),
+              -12px 0 0 10px $accent-turquoise,;
+            }
+          }
+        }
+    }
+
   }
-
-  p {
-    @include body-text;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+  .bios{
+    // margin-top: -$spacing-2xl;
   }
 }

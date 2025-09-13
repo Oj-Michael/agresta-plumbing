@@ -1,0 +1,248 @@
+// Renovation page styles
+.renovation-page {
+  .services-hero {
+    @include section-spacing;
+    background: linear-gradient(135deg, #deedfc 30%,
+     #cfd9e4 50%,
+     $primary-dark);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    
+    &__container {
+      @include content-container;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: $spacing-3xl;
+      align-items: center;
+      
+      @include desktop {
+        grid-template-columns: 1.2fr 1fr;
+        gap: $spacing-4xl;
+      }
+    }
+    
+    &__content {
+      text-align: center;
+      
+      @include desktop {
+        text-align: left;
+      }
+    }
+    
+    &__title {
+      font-size: $font-xl;
+      color: $gray-900;
+      margin-bottom: $spacing-lg;
+      line-height: 1.1;
+      
+      @include tablet; @include desktop {
+        font-size: $font-4xl;
+        margin-bottom: $spacing-xl;
+      }
+    }
+    
+    &__subtitle {
+      font-size: $font-sm;
+      color: $gray-600;
+      line-height: 1.6;
+      margin-bottom: $spacing-xl;
+      max-width: 600px;
+      
+      @include desktop {
+        font-size: $font-base;
+        max-width: none;
+      }
+    }
+    
+    
+    &__image {      
+      img {
+        height: 420px !important;
+        width: 100%;
+        height: auto;
+        border-radius: $radius-xl;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  
+  .services-overview {
+    @include section-spacing;
+    background-color: $white;
+    
+    &__container {
+      @include content-container;
+    }
+    
+    &__header {
+      text-align: center;
+      margin-bottom: $spacing-3xl;
+      
+      h2 {
+        font-size: $font-2xl;
+        font-weight: 700;
+        color: $gray-800;
+        margin-bottom: $spacing-lg;
+        
+        @include tablet {
+          font-size: $font-3xl;
+        }
+      }
+      
+      p {
+        font-size: $font-base;
+        color: $gray-600;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+    }
+    
+    &__features {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+      
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .feature {
+        text-align: center;
+        padding: $spacing-lg;
+        background-color: $primary-dark;
+        border-radius: $radius-lg;
+        box-shadow: 0 0 0 3px $accent-turquoise;
+        
+        h3 {
+          font-size: $font-lg;
+          font-weight: 600;
+          color: $gray-50;
+          margin-bottom: $spacing-sm;
+        }
+        
+        p {
+          font-size: $font-sm;
+          color: $gray-200;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  
+  .services-cta {
+    @include section-spacing;
+    background-color: $bg-secondary;
+    text-align: center;
+    
+    &__container {
+      @include content-container;
+    }
+    
+    h2 {
+      font-size: $font-2xl;
+      font-weight: 700;
+      color: $gray-800;
+      margin-bottom: $spacing-lg;
+      
+      @include tablet {
+        font-size: $font-3xl;
+      }
+    }
+    
+    p {
+      font-size: $font-lg;
+      color: $gray-600;
+      line-height: 1.6;
+      margin-bottom: $spacing-xl;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-md;
+      justify-content: center;
+      
+      @include tablet {
+        flex-direction: row;
+        gap: $spacing-lg;
+      }
+    }
+  }
+  
+  .project-types {
+    @include section-spacing;
+    background-color: $primary-dark;
+    
+    &__container {
+      @include content-container;
+    }
+    
+    &__header {
+      text-align: center;
+      margin-bottom: $spacing-3xl;
+      
+      h2 {
+        font-size: $font-2xl;
+        font-weight: 700;
+        color: $gray-50;
+        margin-bottom: $spacing-lg;
+        
+        @include tablet {
+          font-size: $font-3xl;
+        }
+      }
+      
+      p {
+        font-size: $font-base;
+        color: $gray-200;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+    
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: $spacing-xl;
+      
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .project-type-card {
+        background: $gray-50;
+        padding: $spacing-lg;
+        border-radius: $radius-md;
+        text-align: center;
+        box-shadow: -4px 3px 0 3px rgba($color: $accent-orange, $alpha: 0.65);
+        &__title {
+          font-size: $font-base;
+          font-weight: 600;
+          color: $gray-800;
+          margin-bottom: $spacing-sm;
+          text-transform: uppercase;
+        }
+        
+        &__description {
+          font-size: $font-sm;
+          color: $gray-600;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,8 @@ import { HelmetProvider } from 'react-helmet-async';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import PlumbingServices from './pages/PlumbingServices';
+import Renovation from './pages/Renovation';
 import Contact from './pages/Contact';
 
 // Import components
@@ -26,7 +28,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/renovation" element={<div>Renovation Page - Coming Soon</div>} />
+              <Route path="/plumbing-services" element={<PlumbingServices />} />
+              <Route path="/renovation" element={<Renovation />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

@@ -160,9 +160,9 @@ const Home = () => {
               <p>
                 From emergency repairs to complete installations and renovations, we provide comprehensive plumbing solutions for your home and business.
               </p>
-              <button className="btn btn--accent btn--large" style={{ marginTop: '2rem', }}>
+              <a className="btn btn--accent" style={{ marginTop: '2rem', }} href='/services'>
                 Read More
-              </button>
+              </a>
             </div>
             <div className="services__grid">
               <div className="service-card">
@@ -180,14 +180,14 @@ const Home = () => {
 
               <div className="service-card">
                 <div className="service-card__image">
-                  <img src={serv2} alt="Plumbing Installation" />
+                  <img src={serv2} alt="Plumbing Services" />
                 </div>
                 <div className="service-card__content">
-                  <h3 className="service-card__title">Plumbing Installation</h3>
+                  <h3 className="service-card__title">Plumbing Services</h3>
                   <p className="service-card__description">
                     We install everything from new faucets to complete plumbing systems for your every needs.
                   </p>
-                  <a href="/services" className="service-card__link">Learn More</a>
+                  <a href="/plumbing-services" className="service-card__link">Learn More</a>
                 </div>
               </div>
 
@@ -200,7 +200,7 @@ const Home = () => {
                   <p className="service-card__description">
                     We renovate your plumbing systems to make them more efficient and reliable using the best technologies.
                   </p>
-                  <a href="/services" className="service-card__link">Learn More</a>
+                  <a href="/renovation" className="service-card__link">Learn More</a>
                 </div>
               </div>
             </div>

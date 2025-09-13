@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import aprestaLogo from '../../assets/images/agresta-logo.jpg';
+import aprestaLogo from '../../assets/images/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,6 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Renovation', href: '/renovation' },
     { name: 'Contact', href: '/contact' }
   ];
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import agrestaLogo from '../../assets/images/agresta-logo.jpg';
+import agrestaLogo from '../../assets/images/logo.png';
 
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
