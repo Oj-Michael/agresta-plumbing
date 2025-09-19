@@ -33,9 +33,9 @@ const About = () => {
             plumbers is committed to providing reliable, professional services.
           </p>
             </ScrollReveal>
-            <ScrollReveal direction="scale" delay={0.2} className="grid-item">
+            <div className="grid-item">
                 <img src={man} alt="About Us Agresta" />
-            </ScrollReveal>
+            </div>
           </div>
         </div>
         </section>
