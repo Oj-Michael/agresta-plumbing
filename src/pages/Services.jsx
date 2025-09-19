@@ -103,13 +103,18 @@ const Services = () => {
       <section className="services">
           <div className="services__container">
             <div className="services__header">
-              <h2>What We Offer</h2>
+            <ScrollReveal direction="up" delay={0.1}>
+            <h2>What We Offer</h2>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.1}>
               <p>
                 From emergency repairs to complete installations and renovations, we provide comprehensive plumbing solutions for your home and business.
               </p>
+            </ScrollReveal>
             </div>
             <div className="services__grid">
-              <ScrollReveal direction="left" delay={0.1} className="service-card">
+              <ScrollReveal direction="left" delay={0.1}>
+                <div className="service-card">
                 <div className="service-card__image">
                   <img src={serv2} alt="Plumbing Services" />
                 </div>
@@ -120,9 +125,11 @@ const Services = () => {
                   </p>
                   <a href="/plumbing-services" className="service-card__link">Learn More</a>
                 </div>
+                </div>
               </ScrollReveal>
 
-              <ScrollReveal direction="left" delay={0.2} className="service-card">
+              <ScrollReveal direction="left" delay={0.2}>
+                <div  className="service-card">
                 <div className="service-card__image">
                   <img src={serv3} alt="Plumbing Renovations" />
                 </div>
@@ -132,6 +139,7 @@ const Services = () => {
                     We renovate your plumbing systems to make them more efficient and reliable using the best technologies.
                   </p>
                   <a href="/renovation" className="service-card__link">Learn More</a>
+                </div>
                 </div>
               </ScrollReveal>
             </div>

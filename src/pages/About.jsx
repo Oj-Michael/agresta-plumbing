@@ -68,31 +68,41 @@ const About = () => {
             <h2 className="bios__title">Agresta Core Values</h2>
             <br />
             <div className="bios__core-value-grid">
-              <div className="bios__core-value-card">
-                <h3 className="bios__core-value-card__title">Honesty & Integrity</h3>
-                <p className="bios__core-value-card__description">
-                Transparent service, No hidden surprises                </p>
-              </div>
-              <div className="bios__core-value-card">
+          <ScrollReveal direction="scale" delay={0.1}>
+            <div className="bios__core-value-card">
+                  <h3 className="bios__core-value-card__title">Honesty & Integrity</h3>
+                  <p className="bios__core-value-card__description">
+                  Transparent service, No hidden surprises                </p>
+                </div>
+          </ScrollReveal>
+          <ScrollReveal direction="scale" delay={0.2}>
+          <div className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Customer First</h3>
                 <p className="bios__core-value-card__description">
                 Every job done with care as if it were our own home               </p>
               </div>
-              <div className="bios__core-value-card">
+          </ScrollReveal>
+          <ScrollReveal direction="scale" delay={0.3}>
+          <div className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Quality Craftsmanship</h3>
                 <p className="bios__core-value-card__description">
                 Attention to detail and long-lasting solutions                </p>
               </div>
-              <div className="bios__core-value-card">
+          </ScrollReveal>
+          <ScrollReveal direction="scale" delay={0.4}>
+          <div className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Education</h3>
                 <p className="bios__core-value-card__description">
                 Empowering homeowners with knowledge to prevent problems               </p>
               </div>
+          </ScrollReveal>
+          <ScrollReveal direction="scale" delay={0.5}>
               <div className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Reliability & Assurance</h3>
                 <p className="bios__core-value-card__description">
               Customers can feel secure knowing nothing is left unchecked                </p>
               </div>
+            </ScrollReveal>
             </div>
           </div>
         </section>
@@ -103,11 +113,17 @@ const About = () => {
           '--finalCtaBg': `url(${finalCtaBg})`
         }}>
           <div className="final-cta__container">
-            <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
-            <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
-            <button className="btn btn--primary btn--large">
+          <ScrollReveal direction="up" delay={0.1}>
+          <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={0.2}>
+          <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={0.3}>
+          <button className="btn btn--primary btn--large">
               Book Free Inspection
             </button>
+          </ScrollReveal>
           </div>
         </section>
       </div>

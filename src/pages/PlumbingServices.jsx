@@ -57,7 +57,7 @@ const PlumbingServices = () => {
         {/* Hero Section */}
         <section className="services-hero">
           <div className="services-hero__container">
-            <div className="services-hero__content">
+            <ScrollReveal direction="left" delay={0.1} className="services-hero__content">
               <h1 className="services-hero__title">
                 Professional Plumbing Services
               </h1>
@@ -70,10 +70,10 @@ const PlumbingServices = () => {
                 </button>
 
               </div>
-            </div>
-            <div className="services-hero__image">
+            </ScrollReveal>
+            <ScrollReveal direction="scale" delay={0.2} className="services-hero__image">
               <img src={serv2} alt="Professional Plumbing Services" />
-            </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -87,22 +87,22 @@ const PlumbingServices = () => {
               </p>
             </div>
             <div className="services-overview__features">
-              <div className="feature">
+              <ScrollReveal direction="up" delay={0.1} className="feature">
                 <h3>Licensed & Insured</h3>
                 <p>Fully licensed, bonded, and insured for your peace of mind</p>
-              </div>
-              <div className="feature">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.2} className="feature">
                 <h3>24/7 Emergency Service</h3>
                 <p>Available around the clock for urgent plumbing issues</p>
-              </div>
-              <div className="feature">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.3} className="feature">
                 <h3>Upfront Pricing</h3>
                 <p>Transparent pricing with no hidden fees or surprises</p>
-              </div>
-              <div className="feature">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.4} className="feature">
                 <h3>Quality Guarantee</h3>
                 <p>All work backed by our comprehensive warranty</p>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -113,11 +113,11 @@ const PlumbingServices = () => {
             <h2 className="how-it-works__title">Our Comprehensive Plumbing Services</h2>
             <div className="how-it-works__grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
               {services.map((service, index) => (
-                <div key={index} className="how-it-works__card">
+                <ScrollReveal key={index} direction="up" delay={index * 0.1 + 0.1} className="how-it-works__card">
                   <span className="how-it-works__card__number">{service.number}</span>
                   <h3 className="how-it-works__card__title">{service.title}</h3>
                   <p className="how-it-works__card__description">{service.description}</p>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -132,11 +132,17 @@ const PlumbingServices = () => {
           '--finalCtaBg': `url(${finalCtaBg})`
         }}>
           <div className="final-cta__container">
-            <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
-            <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
-            <button className="btn btn--primary btn--large">
-              Book Free Inspection
-            </button>
+          <ScrollReveal direction="up" delay={0.1}>
+          <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={0.2}>
+              <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.3}>
+              <button className="btn btn--primary btn--large">
+                Book Free Inspection
+              </button>
+            </ScrollReveal>
           </div>
         </section>
       </div>

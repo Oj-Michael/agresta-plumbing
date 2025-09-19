@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import serv3 from '../assets/images/serv-3.webp';
 import finalCtaBg from '../assets/images/plumbero-img16-1.webp';
 import FAQ from '../components/sections/FAQ';
+import ScrollReveal from '../components/animations/ScrollReveal';
 
 const Renovation = () => {
   const services = [
@@ -80,7 +81,7 @@ const Renovation = () => {
         {/* Hero Section */}
         <section className="services-hero">
           <div className="services-hero__container">
-            <div className="services-hero__content">
+            <ScrollReveal direction="left" delay={0.1} className="services-hero__content">
               <h1 className="services-hero__title">
                 Plumbing Renovation Services
               </h1>
@@ -92,10 +93,10 @@ const Renovation = () => {
                   Get In Touch
                 </button>
               </div>
-            </div>
-            <div className="services-hero__image">
+            </ScrollReveal>
+            <ScrollReveal direction="scale" delay={0.2} className="services-hero__image">
               <img src={serv3} alt="Plumbing Renovation Services" />
-            </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -109,22 +110,22 @@ const Renovation = () => {
               </p>
             </div>
             <div className="services-overview__features">
-              <div className="feature">
+              <ScrollReveal direction="up" delay={0.1} className="feature">
                 <h3>Design Consultation</h3>
                 <p>Expert guidance on layouts, fixtures, and modern plumbing solutions</p>
-              </div>
-              <div className="feature">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.2} className="feature">
                 <h3>Project Management</h3>
                 <p>Coordinated renovation process with clear timelines and communication</p>
-              </div>
-              <div className="feature">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.3} className="feature">
                 <h3>Quality Materials</h3>
                 <p>Premium fixtures and materials for lasting beauty and performance</p>
-              </div>
-              <div className="feature">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.4} className="feature">
                 <h3>Code Compliance</h3>
                 <p>All renovations meet current building codes and safety standards</p>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -135,11 +136,11 @@ const Renovation = () => {
             <h2 className="how-it-works__title">Our Renovation Specialties</h2>
             <div className="how-it-works__grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
               {services.map((service, index) => (
-                <div key={index} className="how-it-works__card">
+                <ScrollReveal key={index} direction="up" delay={index * 0.1 + 0.1} className="how-it-works__card">
                   <span className="how-it-works__card__number">{service.number}</span>
                   <h3 className="how-it-works__card__title">{service.title}</h3>
                   <p className="how-it-works__card__description">{service.description}</p>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -154,10 +155,10 @@ const Renovation = () => {
             </div>
             <div className="project-types__grid">
               {projectTypes.map((type, index) => (
-                <div key={index} className="project-type-card">
+                <ScrollReveal key={index} direction="up" delay={index * 0.15 + 0.1} className="project-type-card">
                   <h3 className="project-type-card__title">{type.title}</h3>
                   <p className="project-type-card__description">{type.description}</p>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -172,11 +173,17 @@ const Renovation = () => {
           '--finalCtaBg': `url(${finalCtaBg})`
         }}>
           <div className="final-cta__container">
-            <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
-            <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
-            <button className="btn btn--primary btn--large">
-              Book Free Inspection
-            </button>
+          <ScrollReveal direction="up" delay={0.1}>
+          <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
+          </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.2}>
+              <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.3}>
+              <button className="btn btn--primary btn--large">
+                Book Free Inspection
+              </button>
+            </ScrollReveal>
           </div>
         </section>
       </div>
