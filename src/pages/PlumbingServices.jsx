@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import serv2 from '../assets/images/serv-2.webp';
 import finalCtaBg from '../assets/images/plumbero-img16-1.webp';
 import FAQ from '../components/sections/FAQ';
+import ScrollReveal from '../components/animations/ScrollReveal';
 
 const PlumbingServices = () => {
   const services = [

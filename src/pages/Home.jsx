@@ -141,22 +141,22 @@ const Home = () => {
               <h2 className="free-inspection__title">Free 1-Fixture Plumbing Health Check (First-Time Customers Only)
               </h2>
               <div className="free-inspection__grid">
-                <div className="free-inspection-card">
+                <ScrollReveal direction="right" delay={0.1} className="free-inspection-card">
                   <h3 className="card-title">🔍 Leak Detection</h3>
                   <span className="card-price">$ 49</span>
-                </div>
-                <div className="free-inspection-card">
+                </ScrollReveal>
+                <ScrollReveal direction="right" delay={0.2} className="free-inspection-card">
                   <h3 className="card-title">🛠 Fixture Condition Review</h3>
                   <span className="card-price">$ 29</span>
-                </div>
-                <div className="free-inspection-card">
+                </ScrollReveal>
+                <ScrollReveal direction="right" delay={0.3} className="free-inspection-card">
                   <h3 className="card-title">🚿 Water Pressure Test</h3>
                   <span className="card-price">$ 39</span>
-                </div>
-                <div className="free-inspection-card">
+                </ScrollReveal>
+                <ScrollReveal direction="right" delay={0.4} className="free-inspection-card">
                   <h3 className="card-title">📋 Written Report</h3>
                   <span className="card-price">$ 32</span>
-                </div>
+                </ScrollReveal>
                 
               </div>
           </div>
@@ -174,7 +174,7 @@ const Home = () => {
               </a>
             </div>
             <div className="services__grid">
-              <ScrollReveal direction="left" delay={0.1} className="service-card">
+              <ScrollReveal direction="scale" delay={0.1} className="service-card">
                 <div className="service-card__image">
                   <img src={serv1} alt="Plunbing Repair" />
                 </div>
@@ -187,7 +187,7 @@ const Home = () => {
                 </div>
               </ScrollReveal>
 
-              <ScrollReveal direction="left" delay={0.2} className="service-card">
+              <ScrollReveal direction="scale" delay={0.2} className="service-card">
                 <div className="service-card__image">
                   <img src={serv2} alt="Plumbing Services" />
                 </div>
@@ -200,7 +200,7 @@ const Home = () => {
                 </div>
               </ScrollReveal>
 
-              <ScrollReveal direction="left" delay={0.3} className="service-card">
+              <ScrollReveal direction="scale" delay={0.3} className="service-card">
                 <div className="service-card__image">
                   <img src={serv3} alt="Plumbing Renovations" />
                 </div>
@@ -220,7 +220,7 @@ const Home = () => {
         <section className="bios">
           <div className="bios__container">
 
-            <h2 className="bios__title">Agresta Plumbing Mission Statement</h2>
+          <h2 className="bios__title">Agresta Plumbing Mission Statement</h2>
             <p className="bios__description">
               At Agresta Plumbing, our mission is to deliver the highest standard of plumbing service in Southern Ontario protecting homes, preventing costly problems, and building lasting trust with every homeowner we serve. Francesco’s vision is to make Agresta Plumbing a household name by combining modern service, integrity, and education  giving customers not only solutions, but the knowledge to protect their homes with confidence.
             </p>
@@ -387,11 +387,13 @@ const Home = () => {
           '--finalCtaBg': `url(${finalCtaBg})`
         }}>
           <div className="final-cta__container">
+          <ScrollReveal direction="up" delay={0.1}>
             <h2 className="final-cta__title anim-text">Start With Value. Prevent Bigger Problems.</h2>
-            <ScrollReveal direction="up" delay={0.1}>
+          </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.2}>
               <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
             </ScrollReveal>
-            <ScrollReveal direction="up" delay={0.2}>
+            <ScrollReveal direction="up" delay={0.3}>
               <button className="btn btn--primary btn--large">
                 Book Free Inspection
               </button>

@@ -5,17 +5,16 @@ const ScrollReveal = ({
   children, 
   direction = 'up', 
   delay = 0, 
-  duration = 0.6,
   className = '' 
 }) => {
-  // Animation variants based on direction
+  // Optimized animation variants - reduced blur for performance
   const variants = {
     hidden: {
-      opacity: 0,
-      y: direction === 'up' ? 50 : direction === 'down' ? -50 : 0,
-      x: direction === 'left' ? 50 : direction === 'right' ? -50 : 0,
-      scale: direction === 'scale' ? 0.8 : 1,
-      filter: 'blur(4px)'
+      opacity: 0.1,
+      y: direction === 'up' ? 30 : direction === 'down' ? -30 : 0,
+      x: direction === 'left' ? 30 : direction === 'right' ? -30 : 0,
+      scale: direction === 'scale' ? 0.9 : 1,
+      filter: direction === 'scale' ? 'blur(2px)' : 'blur(0px)' // Less blur for performance
     },
     visible: {
       opacity: 1,
@@ -24,9 +23,10 @@ const ScrollReveal = ({
       scale: 1,
       filter: 'blur(0px)',
       transition: {
-        duration: 0.3, // Fast 300ms animations
+        duration: 0.35,
         delay,
-        ease: [0.25, 0.46, 0.45, 0.94] // Custom easing similar to your original
+        ease: [0.25, 0.25, 0.15, 0.25],
+        type: "tween"
       }
     }
   };
@@ -36,7 +36,7 @@ const ScrollReveal = ({
       className={className}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: '-50px' }}
+      viewport={{ once: true, margin: '-30px', amount: 0.3 }} // Optimized viewport settings
       variants={variants}
     >
       {children}

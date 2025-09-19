@@ -5,6 +5,7 @@ import serv2 from '../assets/images/serv-2.webp';
 import serv3 from '../assets/images/serv-3.webp';
 import budget from '../assets/images/boiler-services.jpg'
 import FAQ from '../components/sections/FAQ';
+import ScrollReveal from '../components/animations/ScrollReveal';
 
 
 const Services = () => {
@@ -108,7 +109,7 @@ const Services = () => {
               </p>
             </div>
             <div className="services__grid">
-              <div className="service-card">
+              <ScrollReveal direction="left" delay={0.1} className="service-card">
                 <div className="service-card__image">
                   <img src={serv2} alt="Plumbing Services" />
                 </div>
@@ -119,9 +120,9 @@ const Services = () => {
                   </p>
                   <a href="/plumbing-services" className="service-card__link">Learn More</a>
                 </div>
-              </div>
+              </ScrollReveal>
 
-              <div className="service-card">
+              <ScrollReveal direction="left" delay={0.2} className="service-card">
                 <div className="service-card__image">
                   <img src={serv3} alt="Plumbing Renovations" />
                 </div>
@@ -132,7 +133,7 @@ const Services = () => {
                   </p>
                   <a href="/renovation" className="service-card__link">Learn More</a>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
       </section>
@@ -140,19 +141,19 @@ const Services = () => {
       <section className="budget">
         <div className="budget__container">
           <div className="budget__grid">
-            <div className="grid-item">
+            <ScrollReveal direction="left" delay={0.1} className="grid-item">
               <h2 className="grid-item__title">Services That Provide FInancial Reflief</h2>
 
               <p className="grid-item__description">
-              There’s no denying the stress that comes with HVAC and plumbing problems, especially when they are unexpected. It’s important to us that you get the services you need. Take advantage of our special offers, designed to help you stick to your budget. Whether it’s signing up for a preventative maintenance package, or checking out financing or discount options, we aim to make essential home services more affordable for you.
+              There's no denying the stress that comes with HVAC and plumbing problems, especially when they are unexpected. It's important to us that you get the services you need. Take advantage of our special offers, designed to help you stick to your budget. Whether it's signing up for a preventative maintenance package, or checking out financing or discount options, we aim to make essential home services more affordable for you.
               </p>
               <button className="btn btn--primary">
                 Get In Touch
               </button>
-            </div>
-            <div className="grid-item__image">
+            </ScrollReveal>
+            <ScrollReveal direction="scale" delay={0.2} className="grid-item__image">
               <img src={budget} alt="Agresta Boiler Services" />
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -235,28 +236,28 @@ const Services = () => {
           <div className="how-it-works__container">
             <h2 className="how-it-works__title">Working With Us Is Simple</h2>
             <div className="how-it-works__grid">
-            <div className="how-it-works__card">
+            <ScrollReveal direction="up" delay={0.1} className="how-it-works__card">
               <span className="how-it-works__card__number">01</span>
               <h3 className="how-it-works__card__title">Connect With Us</h3>
               <p className="how-it-works__card__description">Reach out to us for a free inspection or request a service.</p>
-            </div>
-            <div className="how-it-works__card">
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.2} className="how-it-works__card">
               <span className="how-it-works__card__number">02</span>
               <h3 className="how-it-works__card__title">Free Fixture Inspection</h3>
               <p className="how-it-works__card__description">We'll inspect your fixture and provide you with a detailed report.</p>
-            </div>
+            </ScrollReveal>
             
-            <div className="how-it-works__card">
+            <ScrollReveal direction="up" delay={0.3} className="how-it-works__card">
               <span className="how-it-works__card__number">03</span>
               <h3 className="how-it-works__card__title">Schedule the Work</h3>
               <p className="how-it-works__card__description">We'll schedule the work, approve estimate and pick a time.</p>
-            </div>
+            </ScrollReveal>
             
-            <div className="how-it-works__card">
+            <ScrollReveal direction="up" delay={0.4} className="how-it-works__card">
               <span className="how-it-works__card__number">04</span>
               <h3 className="how-it-works__card__title">Peace of Mind</h3>
               <p className="how-it-works__card__description">Quality work, warranty and no hidden surprises.</p>
-            </div>
+            </ScrollReveal>
           </div>
           </div>
         </section>
