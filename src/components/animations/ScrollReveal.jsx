@@ -14,7 +14,7 @@ const ScrollReveal = ({
       y: direction === 'up' ? 30 : direction === 'down' ? -30 : 0,
       x: direction === 'left' ? 30 : direction === 'right' ? -30 : 0,
       scale: direction === 'scale' ? 0.9 : 1,
-      filter: direction === 'scale' ? 'blur(2px)' : 'blur(0px)' // Less blur for performance
+      filter: direction === 'scale' ? 'blur(2px)' : 'blur(0px)'
     },
     visible: {
       opacity: 1,
