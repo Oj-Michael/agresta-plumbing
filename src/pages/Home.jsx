@@ -174,8 +174,7 @@ const Home = () => {
               </a>
             </div>
             <div className="services__grid">
-              <ScrollReveal direction="scale" delay={0.1}>
-                <div className="service-card">
+              <ScrollReveal direction="scale" delay={0.1} className="service-card">
                 <div className="service-card__image">
                   <img src={serv1} alt="Plunbing Repair" />
                 </div>
@@ -186,11 +185,9 @@ const Home = () => {
                   </p>
                   <a href="/services" className="service-card__link">Learn More</a>
                 </div>
-                </div>
               </ScrollReveal>
 
-              <ScrollReveal direction="scale" delay={0.2}>
-                <div className="service-card">
+              <ScrollReveal direction="scale" delay={0.2} className="service-card">
                 <div className="service-card__image">
                   <img src={serv2} alt="Plumbing Services" />
                 </div>
@@ -201,11 +198,9 @@ const Home = () => {
                   </p>
                   <a href="/plumbing-services" className="service-card__link">Learn More</a>
                 </div>
-                </div>
               </ScrollReveal>
 
-              <ScrollReveal direction="scale" delay={0.3}>
-              <div className="service-card">
+              <ScrollReveal direction="scale" delay={0.3} className="service-card">
                 <div className="service-card__image">
                   <img src={serv3} alt="Plumbing Renovations" />
                 </div>
@@ -215,7 +210,6 @@ const Home = () => {
                     We renovate your plumbing systems to make them more efficient and reliable using the best technologies.
                   </p>
                   <a href="/renovation" className="service-card__link">Learn More</a>
-                </div>
                 </div>
               </ScrollReveal>
             </div>
