@@ -14,10 +14,16 @@ import Contact from './pages/Contact';
 import Header from './components/common/Header';
 import Footer from './components/layout/Footer';
 
+// Import hooks
+import { useAnimations } from './hooks/useAnimations';
+
 // Import styles
 import './styles/main.scss';
 
 function App() {
+  // Initialize animations at app level
+  useAnimations();
+
   return (
     <HelmetProvider>
       <Router>

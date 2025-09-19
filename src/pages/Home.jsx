@@ -7,6 +7,7 @@ import serv2 from '../assets/images/serv-2.webp';
 import serv3 from '../assets/images/serv-3.webp';
 import ceoImg from '../assets/images/agresta-ceo.webp';
 import FAQ from '../components/sections/FAQ';
+import ScrollReveal from '../components/animations/ScrollReveal';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -107,23 +108,31 @@ const Home = () => {
           }}
         >
           <div className="hero__container">
-            <div className="hero__company">
-            Hamilton’s Trusted Plumbing Team
-            </div>
-            <h1 className="hero__title">
-            Start with a Free 1-Fixture Inspection — <span style={{color: "orange"}}>$149 Value, Yours Free</span>
-            </h1>
-            <p className="hero__subtitle">
-              Licensed, bonded, and insured plumbers available 24/7 for all your residential and commercial plumbing needs.
-            </p>
-            <div className="hero__cta">
-              <button className="btn btn--primary btn--large">
-                Claim Free Inspection
-              </button>
-              <button className="btn btn--secondary btn--large">
-                (905) 902-0121
-              </button>
-            </div>
+            <ScrollReveal direction="up" delay={0.1}>
+              <div className="hero__company">
+              Hamilton's Trusted Plumbing Team
+              </div>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.2}>
+              <h1 className="hero__title">
+              Start with a Free 1-Fixture Inspection — <span style={{color: "orange"}}>$149 Value, Yours Free</span>
+              </h1>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.3}>
+              <p className="hero__subtitle">
+                Licensed, bonded, and insured plumbers available 24/7 for all your residential and commercial plumbing needs.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.4}>
+              <div className="hero__cta">
+                <button className="btn btn--primary btn--large">
+                  Claim Free Inspection
+                </button>
+                <button className="btn btn--secondary btn--large">
+                  (905) 902-0121
+                </button>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
@@ -165,7 +174,7 @@ const Home = () => {
               </a>
             </div>
             <div className="services__grid">
-              <div className="service-card">
+              <ScrollReveal direction="left" delay={0.1} className="service-card">
                 <div className="service-card__image">
                   <img src={serv1} alt="Plunbing Repair" />
                 </div>
@@ -176,9 +185,9 @@ const Home = () => {
                   </p>
                   <a href="/services" className="service-card__link">Learn More</a>
                 </div>
-              </div>
+              </ScrollReveal>
 
-              <div className="service-card">
+              <ScrollReveal direction="left" delay={0.2} className="service-card">
                 <div className="service-card__image">
                   <img src={serv2} alt="Plumbing Services" />
                 </div>
@@ -189,9 +198,9 @@ const Home = () => {
                   </p>
                   <a href="/plumbing-services" className="service-card__link">Learn More</a>
                 </div>
-              </div>
+              </ScrollReveal>
 
-              <div className="service-card">
+              <ScrollReveal direction="left" delay={0.3} className="service-card">
                 <div className="service-card__image">
                   <img src={serv3} alt="Plumbing Renovations" />
                 </div>
@@ -202,7 +211,7 @@ const Home = () => {
                   </p>
                   <a href="/renovation" className="service-card__link">Learn More</a>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -217,49 +226,49 @@ const Home = () => {
             </p>
 
             <div className="bios__grid">
-              <div className="bios-card">
+              <ScrollReveal direction="left" delay={0.1} className="bios-card">
                 <span className="subtitle">Meet Francesco</span>
                 <h3 className="bios-card__title">The Founder of Agresta Plumbing</h3>
                 <p className="bios-card__description">
-                Hi, I’m Francesco Agresta, the founder of Agresta Plumbing. Plumbing isn’t just my trade it’s my passion. I take pride in treating every home as if it were my own, making sure nothing is left unchecked and that you always feel secure with the work I provide. My goal is simple: deliver reliable, honest service that keeps your home safe, and give you the peace of mind knowing you’ve got a plumber you can trust.
+                Hi, I'm Francesco Agresta, the founder of Agresta Plumbing. Plumbing isn't just my trade it's my passion. I take pride in treating every home as if it were my own, making sure nothing is left unchecked and that you always feel secure with the work I provide. My goal is simple: deliver reliable, honest service that keeps your home safe, and give you the peace of mind knowing you've got a plumber you can trust.
                 </p>
-              </div>
+              </ScrollReveal>
 
               <div className="bios-card">
-                <div className="bios-card__image">
+                <ScrollReveal direction="scale" delay={0.2} className="bios-card__image">
                   <img src={ceoImg} alt="Agresta Plumbing" />
-                </div>
+                </ScrollReveal>
               </div>
             </div>
             <br />
             <h2 className="bios__title">Agresta Core Values</h2>
             <br />
             <div className="bios__core-value-grid">
-              <div className="bios__core-value-card">
+              <ScrollReveal direction="up" delay={0.1} className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Honesty & Integrity</h3>
                 <p className="bios__core-value-card__description">
                 Transparent service, No hidden surprises                </p>
-              </div>
-              <div className="bios__core-value-card">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.2} className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Customer First</h3>
                 <p className="bios__core-value-card__description">
                 Every job done with care as if it were our own home               </p>
-              </div>
-              <div className="bios__core-value-card">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.3} className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Quality Craftsmanship</h3>
                 <p className="bios__core-value-card__description">
                 Attention to detail and long-lasting solutions                </p>
-              </div>
-              <div className="bios__core-value-card">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.4} className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Education</h3>
                 <p className="bios__core-value-card__description">
                 Empowering homeowners with knowledge to prevent problems               </p>
-              </div>
-              <div className="bios__core-value-card">
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.5} className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Reliability & Assurance</h3>
                 <p className="bios__core-value-card__description">
               Customers can feel secure knowing nothing is left unchecked                </p>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </section>
@@ -343,28 +352,28 @@ const Home = () => {
           <div className="how-it-works__container">
             <h2 className="how-it-works__title">Working With Us Is Simple</h2>
             <div className="how-it-works__grid">
-            <div className="how-it-works__card">
+            <ScrollReveal direction="up" delay={0.1} className="how-it-works__card">
               <span className="how-it-works__card__number">01</span>
               <h3 className="how-it-works__card__title">Connect With Us</h3>
               <p className="how-it-works__card__description">Reach out to us for a free inspection or request a service.</p>
-            </div>
-            <div className="how-it-works__card">
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.2} className="how-it-works__card">
               <span className="how-it-works__card__number">02</span>
               <h3 className="how-it-works__card__title">Free Fixture Inspection</h3>
               <p className="how-it-works__card__description">We'll inspect your fixture and provide you with a detailed report.</p>
-            </div>
+            </ScrollReveal>
             
-            <div className="how-it-works__card">
+            <ScrollReveal direction="up" delay={0.3} className="how-it-works__card">
               <span className="how-it-works__card__number">03</span>
               <h3 className="how-it-works__card__title">Schedule the Work</h3>
               <p className="how-it-works__card__description">We'll schedule the work, approve estimate and pick a time.</p>
-            </div>
+            </ScrollReveal>
             
-            <div className="how-it-works__card">
+            <ScrollReveal direction="up" delay={0.4} className="how-it-works__card">
               <span className="how-it-works__card__number">04</span>
               <h3 className="how-it-works__card__title">Peace of Mind</h3>
               <p className="how-it-works__card__description">Quality work, warranty and no hidden surprises.</p>
-            </div>
+            </ScrollReveal>
           </div>
           </div>
         </section>
@@ -378,11 +387,15 @@ const Home = () => {
           '--finalCtaBg': `url(${finalCtaBg})`
         }}>
           <div className="final-cta__container">
-            <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
-            <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
-            <button className="btn btn--primary btn--large">
-              Book Free Inspection
-            </button>
+            <h2 className="final-cta__title anim-text">Start With Value. Prevent Bigger Problems.</h2>
+            <ScrollReveal direction="up" delay={0.1}>
+              <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+            </ScrollReveal>
+            <ScrollReveal direction="up" delay={0.2}>
+              <button className="btn btn--primary btn--large">
+                Book Free Inspection
+              </button>
+            </ScrollReveal>
           </div>
         </section>
       </div>  

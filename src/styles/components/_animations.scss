@@ -1,0 +1,17 @@
+// Modern animations are now handled by Framer Motion
+// This file is kept for any remaining CSS-only animations
+
+// Text animation classes (if still needed for GSAP)
+.anim-text {
+  // This will be handled by GSAP + SplitType if needed
+  // Just a placeholder for targeting
+}
+
+// Accessibility: Reduce motion for users who prefer it
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
