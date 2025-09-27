@@ -4,9 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(71, 85, 105, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: #d9d9d9;
   z-index: 1000;
   transition: all $transition-normal;
   padding: 0.75rem 0;
@@ -48,8 +46,7 @@
       top: 100%;
       left: 0;
       right: 0;
-      background: rgba(71, 85, 105, 0.95);
-      backdrop-filter: blur(20px);
+      background: #d9d9d9e5;
       flex-direction: column;
       padding: $spacing-lg;
       gap: $spacing-lg;
@@ -70,18 +67,19 @@
   &__nav-link {
     font-weight: 500;
     font-size: $font-lg;
-    color: $white;
+    color: $gray-900;
+    font-weight: 600;
     text-decoration: none;
     transition: all $transition-fast;
     padding: $spacing-sm 0;
     position: relative;
 
     &:hover {
-      color: $secondary-blue;
+      color: $primary-blue;
     }
 
     &--active {
-      color: $secondary-blue;
+      color: $primary-blue;
       
       &::after {
         content: '';
@@ -90,7 +88,7 @@
         left: 0;
         right: 0;
         height: 2px;
-        background: $secondary-blue;
+        background: $primary-blue;
         border-radius: $radius-full;
       }
     }
@@ -151,7 +149,7 @@
       display: block;
       height: 2px;
       width: 100%;
-      background: $white;
+      background: $gray-900;
       border-radius: $radius-full;
       transition: all $transition-fast;
       transform-origin: center;

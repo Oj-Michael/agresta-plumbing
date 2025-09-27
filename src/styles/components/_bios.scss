@@ -67,9 +67,30 @@
             }
             
             .bios-card__title{
-                color: $primary-blue;
+                color: $primary-dark;
                 font-size: $font-2xl;
                 margin-bottom: $spacing-md;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 350px;
+                    width: 100px;
+                    background: url('../../assets/images/two-col-decal.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    top: -100px;
+                    left: -5px;
+                    z-index: -10;
+                    opacity: 0.8;
+                    transform: rotate(180deg);
+    
+                    @include desktop ; @include tablet{
+                      top: -200px;
+                      height: 500px;
+                    }
+                }
             }
             .bios-card__description{
                 color: $gray-600;
@@ -83,10 +104,10 @@
                 }
             }
             &__image{
+                position: relative;
                 height: 350px;
-                border-radius: $radius-md;
                 background-color: $gray-200;
-                overflow: hidden;
+                // overflow: hidden;
 
                 @include tablet {
                     height: 320px;
@@ -100,6 +121,24 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    border-radius: $radius-md;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 120%;
+                    width: 30%;
+                    background: url('../../assets/images/two-col-decal.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    top: -20px;
+                    right: -10px;
+                    z-index: -1;
+    
+                    @include desktop; @include tablet{
+                    right: -40px;
+                    }
                 }
             }
         }
