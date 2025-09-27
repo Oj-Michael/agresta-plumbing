@@ -115,7 +115,7 @@ const Home = () => {
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.2}>
               <h1 className="hero__title">
-              Start with a Free 1-Fixture Inspection — <span style={{color: "#188bf67"}}>$149 Value, Yours Free</span>
+              Start with a Free 1-Fixture Inspection — <span style={{color: "rgb(111 167 220)"}}>$149 Value, Yours Free</span>
               </h1>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
