@@ -10,11 +10,9 @@
   padding: 0.75rem 0;
 
   &__container {
-    @include container;
+    @include content-container;
     @include flex-between;
     align-items: center;
-    padding-left: $spacing-lg;
-    padding-right: $spacing-lg;
   }
 
   &__logo {

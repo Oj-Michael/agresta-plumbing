@@ -17,16 +17,12 @@ const FAQ = () => {
       answer: "Absolutely! We offer a free 1-fixture plumbing health check for first-time customers. This includes leak detection, fixture condition review, water pressure testing, and a detailed written report - a $149 value completely free."
     },
     {
-      question: "Do you offer financing?",
-      answer: "Yes, we understand that plumbing emergencies and major repairs can be unexpected expenses. We offer flexible financing options to help make quality plumbing services accessible to all homeowners. Contact us to discuss available financing plans."
-    },
-    {
       question: "How often should I have my plumbing system inspected?",
       answer: "We recommend annual plumbing inspections to catch potential issues early and prevent costly repairs. For older homes or systems with known issues, bi-annual inspections may be beneficial. Regular maintenance helps extend the life of your plumbing system."
     },
     {
       question: "Do you provide emergency plumbing services?",
-      answer: "Yes, we provide 24/7 emergency plumbing services throughout Southern Ontario. Whether it's a burst pipe, severe leak, or any other plumbing emergency, our licensed plumbers are available around the clock to help protect your home."
+      answer: "Yes, we provide emergency plumbing services throughout Southern Ontario. Whether it's a burst pipe, severe leak, or any other plumbing emergency, our licensed plumbers are available around the clock to help protect your home."
     },
     {
       question: "What areas do you serve?",

@@ -17,7 +17,7 @@ const Home = () => {
   const reviews = [
     {
       name: "Sarah M., Pieter",
-      text: "The free inspection caught a small leak we couldn’t see. Saved us thousands.",
+      text: "The   caught a small leak we couldn’t see. Saved us thousands.",
     },
     {
       name: "Thomas Montgomery", 
@@ -95,7 +95,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>Agresta Plumbing - Leak Free | Worry Free</title>
-        <meta name="description" content="Agresta Plumbing is a professional plumbing services for residential and commercial needs. Available 24/7 for emergency repairs. Licensed, bonded, and insured plumbers." />
+        <meta name="description" content="Agresta Plumbing is a professional plumbing services for residential and commercial needs. Available for emergency repairs. Licensed, bonded, and insured plumbers." />
         <meta name="keywords" content="plumbing, plumber, emergency plumbing, water heater, drain cleaning, leak detection, Agresta Plumbing" />
         <link rel="canonical" href="/" />
       </Helmet>
@@ -115,19 +115,16 @@ const Home = () => {
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.2}>
               <h1 className="hero__title">
-              Start with a Free 1-Fixture Inspection — <span style={{color: "rgb(111 167 220)"}}>$149 Value, Yours Free</span>
+              $50 Off Any Plumbing Repair Over $300 <span style={{color: "rgb(111 167 220)"}}>Limited Time Offer</span>
               </h1>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
               <p className="hero__subtitle">
-                Licensed, bonded, and insured plumbers available 24/7 for all your residential and commercial plumbing needs.
+                Licensed, bonded, and insured plumbers available for all your residential and commercial plumbing needs.
               </p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.4}>
               <div className="hero__cta">
-                <button className="btn btn--primary btn--large">
-                  Claim Free Inspection
-                </button>
                 <button className="btn btn--secondary btn--large">
                   (905) 902-0121
                 </button>
@@ -136,9 +133,9 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="free-inspection">
+        {/* <section className="free-inspection">
           <div className="free-inspection__container">
-              <h2 className="free-inspection__title">Free 1-Fixture Plumbing Health Check (First-Time Customers Only)
+              <h2 className="free-inspection__title">$50 Off Any Plumbing Repair Over $300
               </h2>
               <div className="free-inspection__grid">
                 <ScrollReveal direction="right" delay={0.1} className="free-inspection-card">
@@ -160,7 +157,7 @@ const Home = () => {
                 
               </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="services">
           <div className="services__container">
@@ -220,7 +217,7 @@ const Home = () => {
         <section className="bios">
           <div className="bios__container">
 
-          <h2 className="bios__title">Agresta Plumbing Mission Statement</h2>
+          <h2 className="bios__title">Our Vision</h2>
             <p className="bios__description">
               At Agresta Plumbing, our mission is to deliver the highest standard of plumbing service in Southern Ontario protecting homes, preventing costly problems, and building lasting trust with every homeowner we serve. Francesco’s vision is to make Agresta Plumbing a household name by combining modern service, integrity, and education  giving customers not only solutions, but the knowledge to protect their homes with confidence.
             </p>
@@ -274,7 +271,7 @@ const Home = () => {
         </section>
 
         {/* Reviews */}
-        <section className="reviews">
+        {/* <section className="reviews">
           <div className="reviews__container">
             <h2 className="reviews__title">What Homeowners Are Saying</h2>
             
@@ -341,38 +338,38 @@ const Home = () => {
             <br />
             <div className="cta-container" style={{ display: 'flex', justifyContent: 'center' }}>
             <button className="btn btn--primary btn--large">
-                Claim Free Inspection
+                Call Now
               </button>
             </div>
           </div>
-        </section>
+        </section> */}
         
-        {/* Working with us is simple */}
+        {/* Connect Wit Us */}
         <section className="how-it-works">
           <div className="how-it-works__container">
-            <h2 className="how-it-works__title">Working With Us Is Simple</h2>
+            <h2 className="how-it-works__title">Connect Wit Us</h2>
             <div className="how-it-works__grid">
             <ScrollReveal direction="up" delay={0.1} className="how-it-works__card">
               <span className="how-it-works__card__number">01</span>
               <h3 className="how-it-works__card__title">Connect With Us</h3>
-              <p className="how-it-works__card__description">Reach out to us for a free inspection or request a service.</p>
+              <p className="how-it-works__card__description">Reach out to us for a quote or request a service.</p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.2} className="how-it-works__card">
               <span className="how-it-works__card__number">02</span>
-              <h3 className="how-it-works__card__title">Free Fixture Inspection</h3>
+              <h3 className="how-it-works__card__title">Site Inspection</h3>
               <p className="how-it-works__card__description">We'll inspect your fixture and provide you with a detailed report.</p>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={0.3} className="how-it-works__card">
               <span className="how-it-works__card__number">03</span>
               <h3 className="how-it-works__card__title">Schedule the Work</h3>
-              <p className="how-it-works__card__description">We'll schedule the work, approve estimate and pick a time.</p>
+              <p className="how-it-works__card__description">We'll approve estimate and pick a time.</p>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={0.4} className="how-it-works__card">
               <span className="how-it-works__card__number">04</span>
               <h3 className="how-it-works__card__title">Peace of Mind</h3>
-              <p className="how-it-works__card__description">Quality work, warranty and no hidden surprises.</p>
+              <p className="how-it-works__card__description">Quality work, warranty and no hidden surprises. Guaranteed.</p>
             </ScrollReveal>
           </div>
           </div>
@@ -391,11 +388,11 @@ const Home = () => {
             <h2 className="final-cta__title anim-text">Start With Value. Prevent Bigger Problems.</h2>
           </ScrollReveal>
             <ScrollReveal direction="up" delay={0.2}>
-              <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+              <p className="final-cta__description">$50 Off Any Plumbing Repair Over $300 <span style={{color: "rgb(243 244 131)"}}>Limited Time Offer</span></p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
               <button className="btn btn--primary btn--large">
-                Book Free Inspection
+                Call Now
               </button>
             </ScrollReveal>
           </div>

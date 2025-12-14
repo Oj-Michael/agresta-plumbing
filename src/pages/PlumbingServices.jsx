@@ -62,7 +62,7 @@ const PlumbingServices = () => {
                 Professional Plumbing Services
               </h1>
               <p className="services-hero__subtitle">
-                From emergency repairs to routine maintenance, our licensed plumbers deliver reliable solutions for all your plumbing needs. We're Hamilton's trusted team, available 24/7.
+                From emergency repairs to routine maintenance, our licensed plumbers deliver reliable solutions for all your plumbing needs. We're Hamilton's trusted team, available for emergency repairs.
               </p>
               <div className="services-hero__cta">
                 <button className="btn btn--primary">
@@ -92,14 +92,10 @@ const PlumbingServices = () => {
                 <p>Fully licensed, bonded, and insured for your peace of mind</p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.2} className="feature">
-                <h3>24/7 Emergency Service</h3>
-                <p>Available around the clock for urgent plumbing issues</p>
-              </ScrollReveal>
-              <ScrollReveal direction="up" delay={0.3} className="feature">
                 <h3>Upfront Pricing</h3>
                 <p>Transparent pricing with no hidden fees or surprises</p>
               </ScrollReveal>
-              <ScrollReveal direction="up" delay={0.4} className="feature">
+              <ScrollReveal direction="up" delay={0.3} className="feature">
                 <h3>Quality Guarantee</h3>
                 <p>All work backed by our comprehensive warranty</p>
               </ScrollReveal>
@@ -136,11 +132,11 @@ const PlumbingServices = () => {
           <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.2}>
-              <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+              <p className="final-cta__description">$50 Off Any Plumbing Repair Over $300 <span style={{color: "rgb(243 244 131)"}}>Limited Time Offer</span></p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
               <button className="btn btn--primary btn--large">
-                Book Free Inspection
+                Call Now
               </button>
             </ScrollReveal>
           </div>

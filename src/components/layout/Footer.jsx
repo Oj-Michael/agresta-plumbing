@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import agrestaLogo from '../../assets/images/logo.png';
+import CitiesModal from '../common/CitiesModal';
 
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isCitiesModalOpen, setIsCitiesModalOpen] = useState(false);
+  
+  const cities = ['Hamilton', 'Burlington', 'Oakville', 'Mississauga', 'Paris'];
 
   // Show scroll to top button when user scrolls down
   useEffect(() => {
@@ -28,7 +32,7 @@ const Footer = () => {
     { name: 'Blog', href: '/blog' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'FAQs', href: '/faq' },
-    { name: 'Cities We Serve', href: '/cities' }
+    { name: 'Cities We Serve', isModal: true }
   ];
 
 
@@ -49,9 +53,18 @@ const Footer = () => {
             <ul className="footer__links">
               {usefulLinks.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="footer__link">
-                    {link.name}
-                  </Link>
+                  {link.isModal ? (
+                    <button 
+                      onClick={() => setIsCitiesModalOpen(true)}
+                      className="footer__link footer__link--button"
+                    >
+                      {link.name}
+                    </button>
+                  ) : (
+                    <Link to={link.href} className="footer__link">
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -61,9 +74,6 @@ const Footer = () => {
           <div className="footer__section">
             <h3 className="footer__heading">Contact</h3>
             <div className="footer__contact">
-              <div className="footer__contact-item">
-                <span>Available 24/7</span>
-              </div>
               <div className="footer__contact-item">
                 <span>Southern Ontario</span>
               </div>
@@ -90,6 +100,13 @@ const Footer = () => {
           <span className="footer__scroll-icon">↑</span>
         </button>
       )}
+
+      {/* Cities Modal */}
+      <CitiesModal 
+        isOpen={isCitiesModalOpen}
+        onClose={() => setIsCitiesModalOpen(false)}
+        cities={cities}
+      />
     </footer>
   );
 };

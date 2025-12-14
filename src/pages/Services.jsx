@@ -16,7 +16,7 @@ const Services = () => {
   const reviews = [
     {
       name: "Sarah M., Pieter",
-      text: "The free inspection caught a small leak we couldn’t see. Saved us thousands.",
+      text: "The   caught a small leak we couldn’t see. Saved us thousands.",
     },
     {
       name: "Thomas Montgomery", 
@@ -167,7 +167,7 @@ const Services = () => {
       </section>
 
          {/* Reviews */}
-         <section className="reviews">
+         {/* <section className="reviews">
           <div className="reviews__container">
             <h2 className="reviews__title">What Our Satisfied Customers Have To Say</h2>
             
@@ -238,20 +238,20 @@ const Services = () => {
               </button>
             </div>
           </div>
-        </section>
-  {/* Working with us is simple */}
+        </section> */}
+  {/* Connect Wit Us */}
   <section className="how-it-works">
           <div className="how-it-works__container">
-            <h2 className="how-it-works__title">Working With Us Is Simple</h2>
+            <h2 className="how-it-works__title">Connect Wit Us</h2>
             <div className="how-it-works__grid">
             <ScrollReveal direction="up" delay={0.1} className="how-it-works__card">
               <span className="how-it-works__card__number">01</span>
               <h3 className="how-it-works__card__title">Connect With Us</h3>
-              <p className="how-it-works__card__description">Reach out to us for a free inspection or request a service.</p>
+              <p className="how-it-works__card__description">Reach out to us for a   or request a service.</p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.2} className="how-it-works__card">
               <span className="how-it-works__card__number">02</span>
-              <h3 className="how-it-works__card__title">Free Fixture Inspection</h3>
+              <h3 className="how-it-works__card__title">Site Inspection</h3>
               <p className="how-it-works__card__description">We'll inspect your fixture and provide you with a detailed report.</p>
             </ScrollReveal>
             

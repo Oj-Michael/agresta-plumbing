@@ -43,7 +43,7 @@ const Header = () => {
 
         <div className="header__actions">
           <a href="#" className="header__phone">
-            Book Free Inspection
+            Call Now
           </a>
           <button 
             className="header__mobile-toggle"

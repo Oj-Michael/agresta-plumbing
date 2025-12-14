@@ -177,11 +177,11 @@ const Renovation = () => {
           <h2 className="final-cta__title">Start With Value. Prevent Bigger Problems.</h2>
           </ScrollReveal>
             <ScrollReveal direction="up" delay={0.2}>
-              <p className="final-cta__description">Book your free plumbing inspection today — a $149 value, yours free!</p>
+                <p className="final-cta__description">$50 Off Any Plumbing Repair Over $300 <span style={{color: "rgb(243 244 131)"}}>Limited Time Offer</span></p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
               <button className="btn btn--primary btn--large">
-                Book Free Inspection
+                Call Now
               </button>
             </ScrollReveal>
           </div>

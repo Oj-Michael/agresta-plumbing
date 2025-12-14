@@ -7,8 +7,8 @@ const Contact = () => {
     <>
       <Helmet>
         <title>Contact Us | Get Your Free Plumbing Estimate</title>
-        <meta name="description" content="Contact our professional plumbers for a free estimate. Available 24/7 for emergency plumbing services. Call now or request a quote online." />
-        <meta name="keywords" content="contact plumber, free estimate, emergency plumbing, plumbing quote, 24/7 service" />
+        <meta name="description" content="Contact our professional plumbers for a free estimate. Call now or request a quote online." />
+        <meta name="keywords" content="contact plumber, free estimate, emergency plumbing, plumbing quote, service" />
         <link rel="canonical" href="/contact" />
       </Helmet>
       
