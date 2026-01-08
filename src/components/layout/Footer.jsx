@@ -75,7 +75,7 @@ const Footer = () => {
             <h3 className="footer__heading">Contact</h3>
             <div className="footer__contact">
               <div className="footer__contact-item">
-                <span>Southern Ontario</span>
+                <span>Hamilton</span>
               </div>
               <div className="footer__contact-item">
                 <span>(905) 902-0121</span>

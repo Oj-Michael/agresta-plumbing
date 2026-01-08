@@ -109,7 +109,7 @@
       }
       
       @include desktop {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       }
       
       .feature {
@@ -174,6 +174,91 @@
       @include tablet {
         flex-direction: row;
         gap: $spacing-lg;
+      }
+    }
+  }
+  
+  // Who We Work With Section
+  .who-we-work-with {
+    @include section-spacing;
+    background-color: $white;
+    
+    &__container {
+      @include content-container;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    &__title {
+      font-size: $font-2xl;
+      font-weight: 700;
+      color: $gray-800;
+      margin-bottom: $spacing-lg;
+      
+      @include tablet {
+        font-size: $font-3xl;
+      }
+    }
+    
+    &__description {
+      font-size: $font-base;
+      color: $gray-600;
+      line-height: 1.6;
+      margin-bottom: $spacing-xl;
+    }
+    
+    &__pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-md;
+      justify-content: center;
+      margin-bottom: $spacing-xl;
+      
+      .pill {
+        display: inline-block;
+        padding: $spacing-sm $spacing-lg;
+        background-color: $primary-dark;
+        color: $white;
+        border-radius: $radius-full;
+        font-size: $font-sm;
+        font-weight: 500;
+        white-space: nowrap;
+        box-shadow: $shadow-sm;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: $shadow-md;
+        }
+      }
+    }
+  }
+  
+  // Service Area Section
+  .service-area {
+    @include section-spacing;
+    background-color: $bg-secondary;
+    
+    &__container {
+      @include content-container;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    &__text {
+      font-size: $font-lg;
+      color: $gray-700;
+      line-height: 1.6;
+      
+      @include tablet {
+        font-size: $font-xl;
+      }
+      
+      strong {
+        color: $primary-dark;
+        font-weight: 600;
       }
     }
   }

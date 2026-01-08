@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import PlumbingServices from './pages/PlumbingServices';
+import CommercialServices from './pages/CommercialServices';
+import ResidentialConstruction from './pages/ResidentialConstruction';
 import Renovation from './pages/Renovation';
 import Contact from './pages/Contact';
 
@@ -35,6 +37,8 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/plumbing-services" element={<PlumbingServices />} />
+              <Route path="/commercial-services" element={<CommercialServices />} />
+              <Route path="/residential-construction" element={<ResidentialConstruction />} />
               <Route path="/renovation" element={<Renovation />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

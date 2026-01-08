@@ -9,36 +9,61 @@ const PlumbingServices = () => {
   const services = [
     {
       number: "01",
+      title: "In Floor Heating",
+      description: "Professional in-floor heating installation for residential and commercial spaces. We design and install efficient radiant heating systems that provide consistent warmth, improved comfort, and long-term energy savings."
+    },
+    {
+      number: "02",
+      title: "Custom Home Builds & Upgrades",
+      description: "Complete plumbing services for custom home builds and major renovations. We handle system design, rough-ins, upgrades, and final installations to ensure reliable performance and code compliance."
+    },
+    {
+      number: "03",
+      title: "Interior Water Proofing",
+      description: "Interior waterproofing solutions to protect your home from moisture and water damage. We install drainage systems, sump pumps, and moisture barriers to keep basements dry and secure."
+    },
+    {
+      number: "04",
+      title: "Upgraded Watermains",
+      description: "Watermain upgrade services to improve water pressure and system reliability. We replace aging or undersized lines using modern materials designed for long-term durability and performance."
+    },
+    {
+      number: "05",
+      title: "Upgraded Outside Sewer",
+      description: "Exterior sewer line upgrades to prevent backups and structural failures. We replace outdated sewer connections using proper grading and materials to ensure smooth, dependable wastewater flow."
+    },
+    {
+      number: "06",
       title: "Leak Detection & Repair",
       description: "Advanced leak detection for water and sewer lines using state-of-the-art equipment. We locate and repair leaks quickly to prevent water damage and costly repairs."
     },
     {
-      number: "02", 
+      number: "07", 
       title: "Drain Cleaning & Maintenance",
       description: "Professional drain cleaning services for kitchen, bathroom, and sewer lines. We use hydro-jetting and advanced tools to clear blockages and maintain optimal flow."
     },
     {
-      number: "03",
+      number: "08",
       title: "Water Heater Service",
       description: "Complete water heater installation, repairs, and maintenance. We work with all types including tankless, electric, and gas water heaters for optimal performance."
     },
     {
-      number: "04",
+      number: "09",
       title: "Sewer & Drain Line Inspection", 
       description: "Camera inspection services and hydro-jetting for sewer and drain lines. We identify problems before they become major issues and provide thorough cleaning solutions."
     },
     {
-      number: "05",
+      number: "10",
       title: "Toilet Repair & Installation",
       description: "Professional toilet repair and installation services. From simple fixes to complete replacements, we ensure your bathroom fixtures work perfectly."
     },
     {
-      number: "06", 
+      number: "11", 
       title: "Fixture Repair & Installation",
       description: "Expert installation and repair of sinks, faucets, showers, and disposals. We handle all your fixture needs with precision and quality craftsmanship."
     },
     {
-      number: "07",
+      number: "12",
       title: "Backflow Testing & Prevention", 
       description: "Certified backflow testing and prevention services to protect your water supply. We ensure compliance with local regulations and maintain water safety."
     }

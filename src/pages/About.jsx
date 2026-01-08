@@ -46,7 +46,7 @@ const About = () => {
 
             <h2 className="bios__title">Our Vision</h2>
             <p className="bios__description">
-              At Agresta Plumbing, our mission is to deliver the highest standard of plumbing service in Southern Ontario protecting homes, preventing costly problems, and building lasting trust with every homeowner we serve. Francesco's vision is to make Agresta Plumbing a household name by combining modern service, integrity, and education  giving customers not only solutions, but the knowledge to protect their homes with confidence.
+              At Agresta Plumbing, our mission is to deliver the highest standard of plumbing service in Hamilton, Burlington, Oakville, Mississauga, Paris. Protecting homes, preventing costly problems, and building lasting trust with every homeowner we serve. Francesco's vision is to make Agresta Plumbing a household name by combining modern service, integrity, and education  giving customers not only solutions, but the knowledge to protect their homes with confidence.
             </p>
 
             <div className="bios__grid">
@@ -93,14 +93,14 @@ const About = () => {
           <div className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Education</h3>
                 <p className="bios__core-value-card__description">
-                Empowering homeowners with knowledge to prevent problems               </p>
+                Educating homeowners to prevent problems               </p>
               </div>
           </ScrollReveal>
           <ScrollReveal direction="scale" delay={0.5}>
               <div className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Reliability & Assurance</h3>
                 <p className="bios__core-value-card__description">
-              Customers can feel secure knowing nothing is left unchecked                </p>
+              Clients feel secure knowing everything is checked                </p>
               </div>
             </ScrollReveal>
             </div>

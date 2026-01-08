@@ -41,14 +41,22 @@
             border-radius: $radius-xl;
             box-shadow: $shadow-2xl;
             padding: $spacing-lg;
-            text-align: center;
-
-            .how-it-works__card__number {
-                font-size: $font-5xl;
-                font-weight: 600;
-                color: rgba($primary-dark, 0.2);
+            text-align: right;
+            .how-it-works__card__number__icon {
+                aspect-ratio: 1;
+                width: 40px;
                 display: block;
-                text-align: right;
+                margin-left: auto;
+                margin-bottom: $spacing-lg;
+             }
+            .how-it-works__card__number { 
+                font-size: $font-3xl;
+                font-weight: 600;
+                background-color: rgba($primary-dark, 0.85);
+                padding: $spacing-sm;
+                border-radius: $radius-full;
+                color: white;
+               
             }
 
             .how-it-works__card__title {

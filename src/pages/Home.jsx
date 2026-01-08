@@ -176,15 +176,28 @@ const Home = () => {
                   <img src={serv1} alt="Plunbing Repair" />
                 </div>
                 <div className="service-card__content">
-                  <h3 className="service-card__title">Plumbing Repairs</h3>
+                  <h3 className="service-card__title">Commercial Services</h3>
                   <p className="service-card__description">
-                    We fix everything from sinks to sewer lines, using the best for effective solutions.
+                    We provide comprehensive plumbing solutions for your commercial needs.
                   </p>
-                  <a href="/services" className="service-card__link">Learn More</a>
+                  <a href="/commercial-services" className="service-card__link">Learn More</a>
                 </div>
               </ScrollReveal>
 
               <ScrollReveal direction="scale" delay={0.2} className="service-card">
+                <div className="service-card__image">
+                  <img src={serv1} alt="Plunbing Repair" />
+                </div>
+                <div className="service-card__content">
+                  <h3 className="service-card__title">New Constructions</h3>
+                  <p className="service-card__description">
+                    We provide comprehensive plumbing solutions for your new construction needs.
+                  </p>
+                  <a href="/residential-construction" className="service-card__link">Learn More</a>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal direction="scale" delay={0.3} className="service-card">
                 <div className="service-card__image">
                   <img src={serv2} alt="Plumbing Services" />
                 </div>
@@ -197,7 +210,7 @@ const Home = () => {
                 </div>
               </ScrollReveal>
 
-              <ScrollReveal direction="scale" delay={0.3} className="service-card">
+              <ScrollReveal direction="scale" delay={0.4} className="service-card">
                 <div className="service-card__image">
                   <img src={serv3} alt="Plumbing Renovations" />
                 </div>
@@ -219,7 +232,7 @@ const Home = () => {
 
           <h2 className="bios__title">Our Vision</h2>
             <p className="bios__description">
-              At Agresta Plumbing, our mission is to deliver the highest standard of plumbing service in Southern Ontario protecting homes, preventing costly problems, and building lasting trust with every homeowner we serve. Francesco’s vision is to make Agresta Plumbing a household name by combining modern service, integrity, and education  giving customers not only solutions, but the knowledge to protect their homes with confidence.
+              At Agresta Plumbing, our mission is to deliver the highest standard of plumbing service in Hamilton, Burlington, Oakville, Mississauga, Paris. Protecting homes, preventing costly problems, and building lasting trust with every homeowner we serve. Francesco’s vision is to make Agresta Plumbing a household name by combining modern service, integrity, and education  giving customers not only solutions, but the knowledge to protect their homes with confidence.
             </p>
 
             <div className="bios__grid">
@@ -227,7 +240,7 @@ const Home = () => {
                 <span className="subtitle">Meet Francesco</span>
                 <h3 className="bios-card__title">The Founder of Agresta Plumbing</h3>
                 <p className="bios-card__description">
-                Hi, I'm Francesco Agresta, the founder of Agresta Plumbing. Plumbing isn't just my trade it's my passion. I take pride in treating every home as if it were my own, making sure nothing is left unchecked and that you always feel secure with the work I provide. My goal is simple: deliver reliable, honest service that keeps your home safe, and give you the peace of mind knowing you've got a plumber you can trust.
+                Hi, I'm Francesco Agresta, the founder of Agresta Plumbing. Plumbing isn't just my trade it's my passion. I take pride in treating every home as if it were my own, making sure everything is checked and that you always feel secure with the work I provide. My goal is simple: deliver reliable, honest service that keeps your home safe, and give you the peace of mind knowing you've got a plumber you can trust.
                 </p>
               </ScrollReveal>
 
@@ -264,7 +277,7 @@ const Home = () => {
               <ScrollReveal direction="up" delay={0.5} className="bios__core-value-card">
                 <h3 className="bios__core-value-card__title">Reliability & Assurance</h3>
                 <p className="bios__core-value-card__description">
-              Customers can feel secure knowing nothing is left unchecked                </p>
+              Clients feel secure knowing everything is checked                </p>
               </ScrollReveal>
             </div>
           </div>
@@ -350,24 +363,24 @@ const Home = () => {
             <h2 className="how-it-works__title">Connect Wit Us</h2>
             <div className="how-it-works__grid">
             <ScrollReveal direction="up" delay={0.1} className="how-it-works__card">
-              <span className="how-it-works__card__number">01</span>
+              <svg className='how-it-works__card__number__icon' viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#274d74" stroke-width="1.8"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
               <h3 className="how-it-works__card__title">Connect With Us</h3>
               <p className="how-it-works__card__description">Reach out to us for a quote or request a service.</p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.2} className="how-it-works__card">
-              <span className="how-it-works__card__number">02</span>
+              <svg className='how-it-works__card__number__icon' viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#274d74" stroke-width="1.8"><rect x="3" y="3" width="10" height="10" rx="2"/><circle cx="17" cy="17" r="3"/><line x1="20" y1="20" x2="22" y2="22"/></svg>
               <h3 className="how-it-works__card__title">Site Inspection</h3>
               <p className="how-it-works__card__description">We'll inspect your fixture and provide you with a detailed report.</p>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={0.3} className="how-it-works__card">
-              <span className="how-it-works__card__number">03</span>
+              <svg className='how-it-works__card__number__icon' viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#274d74" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/><path d="M9 14l2 2 4-4"/></svg>
               <h3 className="how-it-works__card__title">Schedule the Work</h3>
               <p className="how-it-works__card__description">We'll approve estimate and pick a time.</p>
             </ScrollReveal>
             
             <ScrollReveal direction="up" delay={0.4} className="how-it-works__card">
-              <span className="how-it-works__card__number">04</span>
+              <svg className='how-it-works__card__number__icon' viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#274d74" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
               <h3 className="how-it-works__card__title">Peace of Mind</h3>
               <p className="how-it-works__card__description">Quality work, warranty and no hidden surprises. Guaranteed.</p>
             </ScrollReveal>

@@ -12,21 +12,15 @@ const FAQ = () => {
       question: "Are you licensed and insured?",
       answer: "Yes, Agresta Plumbing is fully licensed, bonded, and insured. We maintain all necessary certifications and insurance coverage to protect both our team and your property. You can trust that we meet all industry standards and regulations."
     },
-    {
-      question: "Do you offer free inspections?",
-      answer: "Absolutely! We offer a free 1-fixture plumbing health check for first-time customers. This includes leak detection, fixture condition review, water pressure testing, and a detailed written report - a $149 value completely free."
-    },
+   
     {
       question: "How often should I have my plumbing system inspected?",
       answer: "We recommend annual plumbing inspections to catch potential issues early and prevent costly repairs. For older homes or systems with known issues, bi-annual inspections may be beneficial. Regular maintenance helps extend the life of your plumbing system."
     },
-    {
-      question: "Do you provide emergency plumbing services?",
-      answer: "Yes, we provide emergency plumbing services throughout Southern Ontario. Whether it's a burst pipe, severe leak, or any other plumbing emergency, our licensed plumbers are available around the clock to help protect your home."
-    },
+   
     {
       question: "What areas do you serve?",
-      answer: "We proudly serve Hamilton and surrounding areas in Southern Ontario. Our service area includes residential and commercial properties throughout the region. Contact us to confirm service availability in your specific location."
+      answer: "We proudly serve Hamilton and surrounding areas in Ontario. Our service area includes residential and commercial properties throughout the region. Hamilton, Burlington, Oakville, Mississauga, Paris."
     },
     {
       question: "Do you provide warranties on your work?",
