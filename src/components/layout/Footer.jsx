@@ -29,9 +29,11 @@ const Footer = () => {
 
   const usefulLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'FAQs', href: '/faq' },
+    { name: 'Plumbing Services', href: '/plumbing-services' },
+    { name: 'Commercial Services', href: '/commercial-services' },
+    { name: 'Residential Construction', href: '/residential-construction' },
+    { name: 'Renovation', href: '/renovation' },
+    { name: 'Contact', href: '/contact' },
     { name: 'Cities We Serve', isModal: true }
   ];
 
@@ -86,7 +88,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="footer__bottom">
-          <p>&copy; 2025 Agresta Plumbing. All rights reserved.</p>
+          <p>&copy; 2026 Agresta Plumbing. All rights reserved.</p>
         </div>
       </div>
 

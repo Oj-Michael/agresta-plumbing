@@ -5,6 +5,7 @@ import finalCtaBg from '../assets/images/plumbero-img16-1.webp';
 import serv1 from '../assets/images/serv-1.webp';
 import serv2 from '../assets/images/serv-2.webp';
 import serv3 from '../assets/images/serv-3.webp';
+import serv4 from '../assets/images/serv-4.webp';
 import ceoImg from '../assets/images/agresta-ceo.webp';
 import FAQ from '../components/sections/FAQ';
 import ScrollReveal from '../components/animations/ScrollReveal';
@@ -125,9 +126,9 @@ const Home = () => {
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.4}>
               <div className="hero__cta">
-                <button className="btn btn--secondary btn--large">
+                <a href="tel:9059020121" className="btn btn--secondary btn--large">
                   (905) 902-0121
-                </button>
+                </a>
               </div>
             </ScrollReveal>
           </div>
@@ -186,7 +187,7 @@ const Home = () => {
 
               <ScrollReveal direction="scale" delay={0.2} className="service-card">
                 <div className="service-card__image">
-                  <img src={serv1} alt="Plunbing Repair" />
+                  <img src={serv4} alt="New Construction" />
                 </div>
                 <div className="service-card__content">
                   <h3 className="service-card__title">New Constructions</h3>
@@ -350,9 +351,9 @@ const Home = () => {
             </div>
             <br />
             <div className="cta-container" style={{ display: 'flex', justifyContent: 'center' }}>
-            <button className="btn btn--primary btn--large">
+            <a href="tel:9059020121" className="btn btn--primary btn--large">
                 Call Now
-              </button>
+              </a>
             </div>
           </div>
         </section> */}
@@ -404,9 +405,9 @@ const Home = () => {
               <p className="final-cta__description">$50 Off Any Plumbing Repair Over $300 <span style={{color: "rgb(243 244 131)"}}>Limited Time Offer</span></p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
-              <button className="btn btn--primary btn--large">
+              <a href="tel:9059020121" className="btn btn--primary btn--large">
                 Call Now
-              </button>
+              </a>
             </ScrollReveal>
           </div>
         </section>

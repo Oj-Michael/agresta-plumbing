@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import serv1 from '../assets/images/serv-1.webp';
 import serv2 from '../assets/images/serv-2.webp';
 import serv3 from '../assets/images/serv-3.webp';
+import serv4 from '../assets/images/serv-5.jpg';
 import budget from '../assets/images/boiler-services.jpg'
 import FAQ from '../components/sections/FAQ';
 import ScrollReveal from '../components/animations/ScrollReveal';
@@ -12,7 +13,6 @@ const Services = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [visibleCards, setVisibleCards] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(true);
-
   const reviews = [
     {
       name: "Sarah M., Pieter",
@@ -113,8 +113,33 @@ const Services = () => {
             </ScrollReveal>
             </div>
             <div className="services__grid">
-              <ScrollReveal direction="left" delay={0.1}>
-                <div className="service-card">
+              <ScrollReveal direction="scale" delay={0.1} className="service-card">
+                <div className="service-card__image">
+                  <img src={serv1} alt="Plunbing Repair" />
+                </div>
+                <div className="service-card__content">
+                  <h3 className="service-card__title">Commercial Services</h3>
+                  <p className="service-card__description">
+                    We provide comprehensive plumbing solutions for your commercial needs.
+                  </p>
+                  <a href="/commercial-services" className="service-card__link">Learn More</a>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal direction="scale" delay={0.2} className="service-card">
+                <div className="service-card__image">
+                  <img src={serv4} alt="New Construction" />
+                </div>
+                <div className="service-card__content">
+                  <h3 className="service-card__title">New Constructions</h3>
+                  <p className="service-card__description">
+                    We provide comprehensive plumbing solutions for your new construction needs.
+                  </p>
+                  <a href="/residential-construction" className="service-card__link">Learn More</a>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal direction="scale" delay={0.3} className="service-card">
                 <div className="service-card__image">
                   <img src={serv2} alt="Plumbing Services" />
                 </div>
@@ -125,11 +150,9 @@ const Services = () => {
                   </p>
                   <a href="/plumbing-services" className="service-card__link">Learn More</a>
                 </div>
-                </div>
               </ScrollReveal>
 
-              <ScrollReveal direction="left" delay={0.2}>
-                <div  className="service-card">
+              <ScrollReveal direction="scale" delay={0.4} className="service-card">
                 <div className="service-card__image">
                   <img src={serv3} alt="Plumbing Renovations" />
                 </div>
@@ -139,7 +162,6 @@ const Services = () => {
                     We renovate your plumbing systems to make them more efficient and reliable using the best technologies.
                   </p>
                   <a href="/renovation" className="service-card__link">Learn More</a>
-                </div>
                 </div>
               </ScrollReveal>
             </div>

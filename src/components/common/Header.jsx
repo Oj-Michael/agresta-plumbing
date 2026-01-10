@@ -42,7 +42,7 @@ const Header = () => {
         </nav>
 
         <div className="header__actions">
-          <a href="#" className="header__phone">
+          <a href="tel:9059020121" className="header__phone">
             Call Now
           </a>
           <button 

@@ -120,9 +120,9 @@ const About = () => {
           <p className="final-cta__description">$50 Off Any Plumbing Repair Over $300 <span style={{color: "rgb(243 244 131)"}}>Limited Time Offer</span></p>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.3}>
-          <button className="btn btn--primary btn--large">
+          <a href="tel:9059020121" className="btn btn--primary btn--large">
               Call Now
-            </button>
+            </a>
           </ScrollReveal>
           </div>
         </section>

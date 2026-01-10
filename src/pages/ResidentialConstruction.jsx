@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import serv2 from '../assets/images/serv-2.webp';
+import serv5 from '../assets/images/serv-5.jpg';
 import finalCtaBg from '../assets/images/plumbero-img16-1.webp';
 import ScrollReveal from '../components/animations/ScrollReveal';
 
@@ -70,7 +71,7 @@ const ResidentialConstruction = () => {
               </div>
             </ScrollReveal>
             <ScrollReveal direction="scale" delay={0.2} className="services-hero__image">
-              <img src={serv2} alt="Residential New Construction Plumbing" />
+              <img src={serv5} alt="Residential New Construction Plumbing" />
             </ScrollReveal>
           </div>
         </section>
